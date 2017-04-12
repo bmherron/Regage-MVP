@@ -1,0 +1,59 @@
+{
+  "builtBy": "meteor/13",
+  "buildDependencies": {
+    "os.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-search/package.js": "1428c9415f21479ba79515e54bbf1998a17f42d5",
+        "/home/action/workspace/RetortB/packages/telescope-search/lib/search.js": "15b1420a9d491eb1d7eb84663d21887380f82a32",
+        "/home/action/workspace/RetortB/packages/telescope-search/lib/server/log_search.js": "c53a06db2d2c74e7a00214bc0c9edf9cfbb485f2",
+        "/home/action/workspace/RetortB/packages/telescope-search/lib/server/publications.js": "637a6ca763be7ecbdc7ac9f7e3df553f9684e7f8"
+      },
+      "directories": []
+    },
+    "web.browser.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-search/package.js": "1428c9415f21479ba79515e54bbf1998a17f42d5",
+        "/home/action/workspace/RetortB/packages/telescope-search/lib/search.js": "15b1420a9d491eb1d7eb84663d21887380f82a32",
+        "/home/action/workspace/RetortB/packages/telescope-search/lib/client/routes.js": "0f8a7c0b1e04bd98bdc22ec5cab1ed6651e6a084",
+        "/home/action/workspace/RetortB/packages/telescope-search/lib/client/views/search.html": "9761822c8c28f5c81cb56e04e614fc03cdc47c8e",
+        "/home/action/workspace/RetortB/packages/telescope-search/lib/client/views/search.js": "02c7740fd4c76f77abf74baf8015d4c473c22d27",
+        "/home/action/workspace/RetortB/packages/telescope-search/lib/client/css/search.css": "840d02f7940fbbbc8555728bf66f0e6d06b27b61",
+        "/home/action/workspace/RetortB/packages/telescope-search/lib/client/views/search_logs.html": "1a3c84665677f5fed7cebb4af6b8567409621734",
+        "/home/action/workspace/RetortB/packages/telescope-search/lib/client/views/search_logs.js": "96fe7c064e73a0b3e25a505282910c8b4fd63e83"
+      },
+      "directories": []
+    },
+    "web.cordova.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-search/package.js": "1428c9415f21479ba79515e54bbf1998a17f42d5",
+        "/home/action/workspace/RetortB/packages/telescope-search/lib/search.js": "15b1420a9d491eb1d7eb84663d21887380f82a32",
+        "/home/action/workspace/RetortB/packages/telescope-search/lib/client/routes.js": "0f8a7c0b1e04bd98bdc22ec5cab1ed6651e6a084",
+        "/home/action/workspace/RetortB/packages/telescope-search/lib/client/views/search.html": "9761822c8c28f5c81cb56e04e614fc03cdc47c8e",
+        "/home/action/workspace/RetortB/packages/telescope-search/lib/client/views/search.js": "02c7740fd4c76f77abf74baf8015d4c473c22d27",
+        "/home/action/workspace/RetortB/packages/telescope-search/lib/client/css/search.css": "840d02f7940fbbbc8555728bf66f0e6d06b27b61",
+        "/home/action/workspace/RetortB/packages/telescope-search/lib/client/views/search_logs.html": "1a3c84665677f5fed7cebb4af6b8567409621734",
+        "/home/action/workspace/RetortB/packages/telescope-search/lib/client/views/search_logs.js": "96fe7c064e73a0b3e25a505282910c8b4fd63e83"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/home/action/workspace/RetortB/packages/telescope-search/package.js": "1428c9415f21479ba79515e54bbf1998a17f42d5"
+    },
+    "directories": []
+  },
+  "source": "/home/action/workspace/RetortB/packages/telescope-search",
+  "buildTimeDirectDependencies": {
+    "telescope-lib": "0.2.9+8f99c935e1877c58f39af5d2287bc2915e76d32e",
+    "templating": "1.0.7",
+    "underscore": "1.0.0",
+    "iron:router": "0.9.4",
+    "jquery": "1.0.0",
+    "meteor": "1.1.1",
+    "aldeed:simple-schema": "1.0.3",
+    "telescope-base": "0.0.0+22fec1d0883ad156190aedfb23a59885d4597fad"
+  },
+  "buildTimePluginDependencies": {},
+  "cordovaDependencies": null
+}

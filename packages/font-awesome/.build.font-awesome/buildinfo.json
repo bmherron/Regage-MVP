@@ -1,0 +1,37 @@
+{
+  "builtBy": "meteor/13",
+  "buildDependencies": {
+    "os.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/font-awesome/package.js": "1d18620779ed62203727d7849d56a33b96c2b7ab"
+      },
+      "directories": []
+    },
+    "web.browser.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/font-awesome/package.js": "1d18620779ed62203727d7849d56a33b96c2b7ab",
+        "/home/action/workspace/RetortB/packages/font-awesome/load.js": "bc43282e9f0696cc39d6de9af8bee4e8735fd118"
+      },
+      "directories": []
+    },
+    "web.cordova.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/font-awesome/package.js": "1d18620779ed62203727d7849d56a33b96c2b7ab",
+        "/home/action/workspace/RetortB/packages/font-awesome/load.js": "bc43282e9f0696cc39d6de9af8bee4e8735fd118"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/home/action/workspace/RetortB/packages/font-awesome/package.js": "1d18620779ed62203727d7849d56a33b96c2b7ab"
+    },
+    "directories": []
+  },
+  "source": "/home/action/workspace/RetortB/packages/font-awesome",
+  "buildTimeDirectDependencies": {
+    "meteor": "1.1.1"
+  },
+  "buildTimePluginDependencies": {},
+  "cordovaDependencies": null
+}

@@ -1,0 +1,23 @@
+{
+  "format": "unipackage-pre2",
+  "name": "telescope-email",
+  "summary": "Telescope email package",
+  "version": "0.2.9+247ec25339259bb904b404fc54e21ab1c52afcb3",
+  "earliestCompatibleVersion": "0.0.0",
+  "isTest": false,
+  "unibuilds": [
+    {
+      "arch": "os",
+      "path": "os.json"
+    },
+    {
+      "arch": "web.browser",
+      "path": "web.browser.json"
+    },
+    {
+      "arch": "web.cordova",
+      "path": "web.cordova.json"
+    }
+  ],
+  "plugins": []
+}

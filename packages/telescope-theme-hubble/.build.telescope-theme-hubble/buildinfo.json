@@ -1,0 +1,42 @@
+{
+  "builtBy": "meteor/13",
+  "buildDependencies": {
+    "os.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-theme-hubble/package.js": "0c083dcfa8f22d18e370ba3de26ac8a533edcb29",
+        "/home/action/workspace/RetortB/packages/telescope-theme-hubble/lib/hubble.js": "e253125709a0e24fb55972674e8b42e00e12d153"
+      },
+      "directories": []
+    },
+    "web.browser.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-theme-hubble/package.js": "0c083dcfa8f22d18e370ba3de26ac8a533edcb29",
+        "/home/action/workspace/RetortB/packages/telescope-theme-hubble/lib/hubble.js": "e253125709a0e24fb55972674e8b42e00e12d153",
+        "/home/action/workspace/RetortB/packages/telescope-theme-hubble/lib/client/css/screen.css": "71947f2ae5934a53f165c4fe07d339c8c14799f4"
+      },
+      "directories": []
+    },
+    "web.cordova.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-theme-hubble/package.js": "0c083dcfa8f22d18e370ba3de26ac8a533edcb29",
+        "/home/action/workspace/RetortB/packages/telescope-theme-hubble/lib/hubble.js": "e253125709a0e24fb55972674e8b42e00e12d153",
+        "/home/action/workspace/RetortB/packages/telescope-theme-hubble/lib/client/css/screen.css": "71947f2ae5934a53f165c4fe07d339c8c14799f4"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/home/action/workspace/RetortB/packages/telescope-theme-hubble/package.js": "0c083dcfa8f22d18e370ba3de26ac8a533edcb29"
+    },
+    "directories": []
+  },
+  "source": "/home/action/workspace/RetortB/packages/telescope-theme-hubble",
+  "buildTimeDirectDependencies": {
+    "telescope-lib": "0.2.9+8f99c935e1877c58f39af5d2287bc2915e76d32e",
+    "meteor": "1.1.1",
+    "telescope-base": "0.0.0+22fec1d0883ad156190aedfb23a59885d4597fad"
+  },
+  "buildTimePluginDependencies": {},
+  "cordovaDependencies": null
+}

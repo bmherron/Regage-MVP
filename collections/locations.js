@@ -1,0 +1,1 @@
+commGroups = new Meteor.Collection("commgroups");

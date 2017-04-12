@@ -1,0 +1,40 @@
+{
+  "builtBy": "meteor/13",
+  "buildDependencies": {
+    "os.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/npm-container/package.js": "c92e7548ef6c01cba912640811d4e3f7c2a78aa0",
+        "/home/action/workspace/RetortB/packages/npm-container/.npm/package/npm-shrinkwrap.json": "cb1d210c2ea884adb43d02d0c72c4d8b16cdef83",
+        "/home/action/workspace/RetortB/packages/npm-container/index.js": "a616a3fbec2b4579c102d3ca2ea5957cfea1ff59",
+        "/home/action/workspace/RetortB/packages.json": "c9db6938c25928203429e39a6f2c80c4c59eed5e"
+      },
+      "directories": []
+    },
+    "web.browser.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/npm-container/package.js": "c92e7548ef6c01cba912640811d4e3f7c2a78aa0",
+        "/home/action/workspace/RetortB/packages/npm-container/.npm/package/npm-shrinkwrap.json": "cb1d210c2ea884adb43d02d0c72c4d8b16cdef83"
+      },
+      "directories": []
+    },
+    "web.cordova.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/npm-container/package.js": "c92e7548ef6c01cba912640811d4e3f7c2a78aa0",
+        "/home/action/workspace/RetortB/packages/npm-container/.npm/package/npm-shrinkwrap.json": "cb1d210c2ea884adb43d02d0c72c4d8b16cdef83"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/home/action/workspace/RetortB/packages/npm-container/package.js": "c92e7548ef6c01cba912640811d4e3f7c2a78aa0"
+    },
+    "directories": []
+  },
+  "source": "/home/action/workspace/RetortB/packages/npm-container",
+  "buildTimeDirectDependencies": {
+    "meteor": "1.1.1"
+  },
+  "buildTimePluginDependencies": {},
+  "cordovaDependencies": null
+}

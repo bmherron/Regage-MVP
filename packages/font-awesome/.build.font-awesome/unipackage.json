@@ -1,0 +1,23 @@
+{
+  "format": "unipackage-pre2",
+  "name": "font-awesome",
+  "summary": "Latest version Font-Awesome loaded via CDN",
+  "version": "0.0.0+8c7a1537cd0578be5954d690b63b41cca78541f5",
+  "earliestCompatibleVersion": "0.0.0",
+  "isTest": false,
+  "unibuilds": [
+    {
+      "arch": "os",
+      "path": "os.json"
+    },
+    {
+      "arch": "web.browser",
+      "path": "web.browser.json"
+    },
+    {
+      "arch": "web.cordova",
+      "path": "web.cordova.json"
+    }
+  ],
+  "plugins": []
+}

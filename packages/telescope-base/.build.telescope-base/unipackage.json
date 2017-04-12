@@ -1,0 +1,23 @@
+{
+  "format": "unipackage-pre2",
+  "name": "telescope-base",
+  "summary": "Telescope base package",
+  "version": "0.0.0+22fec1d0883ad156190aedfb23a59885d4597fad",
+  "earliestCompatibleVersion": "0.0.0",
+  "isTest": false,
+  "unibuilds": [
+    {
+      "arch": "os",
+      "path": "os.json"
+    },
+    {
+      "arch": "web.browser",
+      "path": "web.browser.json"
+    },
+    {
+      "arch": "web.cordova",
+      "path": "web.cordova.json"
+    }
+  ],
+  "plugins": []
+}

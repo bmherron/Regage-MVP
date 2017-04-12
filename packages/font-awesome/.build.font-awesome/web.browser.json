@@ -1,0 +1,19 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [],
+  "uses": [
+    {
+      "package": "meteor"
+    }
+  ],
+  "resources": [
+    {
+      "type": "prelink",
+      "file": "web.browser/packages/font-awesome.js",
+      "length": 1498,
+      "offset": 0,
+      "servePath": "/packages/font-awesome.js",
+      "sourceMap": "web.browser/packages/font-awesome.js.map"
+    }
+  ]
+}

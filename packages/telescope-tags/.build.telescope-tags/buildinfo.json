@@ -1,0 +1,64 @@
+{
+  "builtBy": "meteor/13",
+  "buildDependencies": {
+    "os.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-tags/package.js": "a763263e181d5d2bb11fdda141f0efc1f0d68194",
+        "/home/action/workspace/RetortB/packages/telescope-tags/lib/tags.js": "7f8ffac2a99da7b8ad7e2aed84e6da5494b25845",
+        "/home/action/workspace/RetortB/packages/telescope-tags/lib/server/publications.js": "1d15e3573b7ecc27d4bb6286a7f3a8ef254f73fd"
+      },
+      "directories": []
+    },
+    "web.browser.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-tags/package.js": "a763263e181d5d2bb11fdda141f0efc1f0d68194",
+        "/home/action/workspace/RetortB/packages/telescope-tags/lib/tags.js": "7f8ffac2a99da7b8ad7e2aed84e6da5494b25845",
+        "/home/action/workspace/RetortB/packages/telescope-tags/lib/client/routes.js": "181e92ed51f756df06068f5fb96800625a2ecf7b",
+        "/home/action/workspace/RetortB/packages/telescope-tags/lib/client/views/categories.html": "0ea365f0f9d34b8d03f0a595d44aca20c5f65efd",
+        "/home/action/workspace/RetortB/packages/telescope-tags/lib/client/views/categories.js": "08351230c6721fbaff0e2e684149bfdd89f21968",
+        "/home/action/workspace/RetortB/packages/telescope-tags/lib/client/views/category_item.html": "2177922d5d7ee78460277ff98c8df7680463c88c",
+        "/home/action/workspace/RetortB/packages/telescope-tags/lib/client/views/category_item.js": "11770aa1f19cf3947bbbe8c9a024bcf1970713fe",
+        "/home/action/workspace/RetortB/packages/telescope-tags/lib/client/views/categories_menu.html": "8421971a40a88999d7b6b5fbea4c96f1279dcc5e",
+        "/home/action/workspace/RetortB/packages/telescope-tags/lib/client/views/categories_menu.js": "711a8e937f46190137cded80632731e6a898f023",
+        "/home/action/workspace/RetortB/packages/telescope-tags/lib/client/views/post_categories.html": "7bbb9008db042cdfb4128d509978e6a880160f54",
+        "/home/action/workspace/RetortB/packages/telescope-tags/lib/client/views/post_categories.js": "c1ee01bc446f7010db5c87a408b547338f207a9b"
+      },
+      "directories": []
+    },
+    "web.cordova.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-tags/package.js": "a763263e181d5d2bb11fdda141f0efc1f0d68194",
+        "/home/action/workspace/RetortB/packages/telescope-tags/lib/tags.js": "7f8ffac2a99da7b8ad7e2aed84e6da5494b25845",
+        "/home/action/workspace/RetortB/packages/telescope-tags/lib/client/routes.js": "181e92ed51f756df06068f5fb96800625a2ecf7b",
+        "/home/action/workspace/RetortB/packages/telescope-tags/lib/client/views/categories.html": "0ea365f0f9d34b8d03f0a595d44aca20c5f65efd",
+        "/home/action/workspace/RetortB/packages/telescope-tags/lib/client/views/categories.js": "08351230c6721fbaff0e2e684149bfdd89f21968",
+        "/home/action/workspace/RetortB/packages/telescope-tags/lib/client/views/category_item.html": "2177922d5d7ee78460277ff98c8df7680463c88c",
+        "/home/action/workspace/RetortB/packages/telescope-tags/lib/client/views/category_item.js": "11770aa1f19cf3947bbbe8c9a024bcf1970713fe",
+        "/home/action/workspace/RetortB/packages/telescope-tags/lib/client/views/categories_menu.html": "8421971a40a88999d7b6b5fbea4c96f1279dcc5e",
+        "/home/action/workspace/RetortB/packages/telescope-tags/lib/client/views/categories_menu.js": "711a8e937f46190137cded80632731e6a898f023",
+        "/home/action/workspace/RetortB/packages/telescope-tags/lib/client/views/post_categories.html": "7bbb9008db042cdfb4128d509978e6a880160f54",
+        "/home/action/workspace/RetortB/packages/telescope-tags/lib/client/views/post_categories.js": "c1ee01bc446f7010db5c87a408b547338f207a9b"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/home/action/workspace/RetortB/packages/telescope-tags/package.js": "a763263e181d5d2bb11fdda141f0efc1f0d68194"
+    },
+    "directories": []
+  },
+  "source": "/home/action/workspace/RetortB/packages/telescope-tags",
+  "buildTimeDirectDependencies": {
+    "telescope-lib": "0.2.9+8f99c935e1877c58f39af5d2287bc2915e76d32e",
+    "templating": "1.0.7",
+    "underscore": "1.0.0",
+    "iron:router": "0.9.4",
+    "jquery": "1.0.0",
+    "meteor": "1.1.1",
+    "aldeed:simple-schema": "1.0.3",
+    "telescope-base": "0.0.0+bddba8c5dc6a7bf80f8ca908f72bd24551a372ed"
+  },
+  "buildTimePluginDependencies": {},
+  "cordovaDependencies": null
+}

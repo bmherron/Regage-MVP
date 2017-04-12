@@ -1,0 +1,69 @@
+{
+  "builtBy": "meteor/13",
+  "buildDependencies": {
+    "os.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-notifications/package.js": "423301535e53faf53474efc8200e92f66ca2ce66",
+        "/home/action/workspace/RetortB/packages/telescope-notifications/lib/notifications.js": "8abe07bd958de2d3d3ccbdf2afe98cbd419c3bc3",
+        "/home/action/workspace/RetortB/packages/telescope-notifications/lib/herald.js": "4921b0b3b0d12d8731d53562c0dd0aab5c33cf6d",
+        "/home/action/workspace/RetortB/packages/telescope-notifications/lib/server/notifications-server.js": "e06e587f68a65946afb175cfc41b470a8f2cad75"
+      },
+      "directories": []
+    },
+    "web.browser.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-notifications/package.js": "423301535e53faf53474efc8200e92f66ca2ce66",
+        "/home/action/workspace/RetortB/packages/telescope-notifications/lib/notifications.js": "8abe07bd958de2d3d3ccbdf2afe98cbd419c3bc3",
+        "/home/action/workspace/RetortB/packages/telescope-notifications/lib/herald.js": "4921b0b3b0d12d8731d53562c0dd0aab5c33cf6d",
+        "/home/action/workspace/RetortB/packages/telescope-notifications/lib/client/templates/notification_item.html": "da85db38a14155a8aab7c38372549b036ac641d3",
+        "/home/action/workspace/RetortB/packages/telescope-notifications/lib/client/templates/notification_item.js": "fe06783bc85221eb6a5bd6879b9d54ab362f5916",
+        "/home/action/workspace/RetortB/packages/telescope-notifications/lib/client/templates/notification_new_comment.html": "5e261a5fb11f0b5cdc0d58a8b7679ffaabd90d4a",
+        "/home/action/workspace/RetortB/packages/telescope-notifications/lib/client/templates/notification_new_reply.html": "5175176c6231a26d1fd3201a6c8c0581f5ca4c0c",
+        "/home/action/workspace/RetortB/packages/telescope-notifications/lib/client/templates/notifications_menu.html": "28677f0f926f21af86b551eb985456d1b1cb7662",
+        "/home/action/workspace/RetortB/packages/telescope-notifications/lib/client/templates/notifications_menu.js": "f25ae31b8456b7ba2a4ca889d5e122d63be545dd",
+        "/home/action/workspace/RetortB/packages/telescope-notifications/lib/client/templates/unsubscribe.html": "f71ab8b691f32afe91d67c1283ae8d8321f74ed5",
+        "/home/action/workspace/RetortB/packages/telescope-notifications/lib/client/templates/unsubscribe.js": "52b5a7fc1d51be8a877443d619e58f5339fdb628"
+      },
+      "directories": []
+    },
+    "web.cordova.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-notifications/package.js": "423301535e53faf53474efc8200e92f66ca2ce66",
+        "/home/action/workspace/RetortB/packages/telescope-notifications/lib/notifications.js": "8abe07bd958de2d3d3ccbdf2afe98cbd419c3bc3",
+        "/home/action/workspace/RetortB/packages/telescope-notifications/lib/herald.js": "4921b0b3b0d12d8731d53562c0dd0aab5c33cf6d",
+        "/home/action/workspace/RetortB/packages/telescope-notifications/lib/client/templates/notification_item.html": "da85db38a14155a8aab7c38372549b036ac641d3",
+        "/home/action/workspace/RetortB/packages/telescope-notifications/lib/client/templates/notification_item.js": "fe06783bc85221eb6a5bd6879b9d54ab362f5916",
+        "/home/action/workspace/RetortB/packages/telescope-notifications/lib/client/templates/notification_new_comment.html": "5e261a5fb11f0b5cdc0d58a8b7679ffaabd90d4a",
+        "/home/action/workspace/RetortB/packages/telescope-notifications/lib/client/templates/notification_new_reply.html": "5175176c6231a26d1fd3201a6c8c0581f5ca4c0c",
+        "/home/action/workspace/RetortB/packages/telescope-notifications/lib/client/templates/notifications_menu.html": "28677f0f926f21af86b551eb985456d1b1cb7662",
+        "/home/action/workspace/RetortB/packages/telescope-notifications/lib/client/templates/notifications_menu.js": "f25ae31b8456b7ba2a4ca889d5e122d63be545dd",
+        "/home/action/workspace/RetortB/packages/telescope-notifications/lib/client/templates/unsubscribe.html": "f71ab8b691f32afe91d67c1283ae8d8321f74ed5",
+        "/home/action/workspace/RetortB/packages/telescope-notifications/lib/client/templates/unsubscribe.js": "52b5a7fc1d51be8a877443d619e58f5339fdb628"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/home/action/workspace/RetortB/packages/telescope-notifications/package.js": "423301535e53faf53474efc8200e92f66ca2ce66"
+    },
+    "directories": []
+  },
+  "source": "/home/action/workspace/RetortB/packages/telescope-notifications",
+  "buildTimeDirectDependencies": {
+    "telescope-lib": "0.2.9+8f99c935e1877c58f39af5d2287bc2915e76d32e",
+    "cmather:handlebars-server": "0.2.0",
+    "templating": "1.0.7",
+    "tracker": "1.0.2",
+    "kestanous:herald": "0.6.0",
+    "telescope-email": "0.2.9+247ec25339259bb904b404fc54e21ab1c52afcb3",
+    "underscore": "1.0.0",
+    "iron:router": "0.9.4",
+    "kestanous:herald-email": "0.2.1",
+    "jquery": "1.0.0",
+    "meteor": "1.1.1",
+    "telescope-base": "0.0.0+bddba8c5dc6a7bf80f8ca908f72bd24551a372ed"
+  },
+  "buildTimePluginDependencies": {},
+  "cordovaDependencies": null
+}

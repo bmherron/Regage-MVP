@@ -1,0 +1,84 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [
+    {
+      "name": "campaignSchema"
+    },
+    {
+      "name": "Campaigns"
+    },
+    {
+      "name": "defaultFrequency"
+    },
+    {
+      "name": "defaultPosts"
+    },
+    {
+      "name": "getCampaignPosts"
+    },
+    {
+      "name": "buildCampaign"
+    },
+    {
+      "name": "scheduleNextCampaign"
+    },
+    {
+      "name": "Later"
+    },
+    {
+      "name": "getSchedule"
+    },
+    {
+      "name": "getNextCampaignSchedule"
+    },
+    {
+      "name": "scheduleCampaign"
+    },
+    {
+      "name": "addToMailChimpList"
+    },
+    {
+      "name": "syncAddToMailChimpList"
+    },
+    {
+      "name": "Handlebars"
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "telescope-lib"
+    },
+    {
+      "package": "telescope-base"
+    },
+    {
+      "package": "aldeed:simple-schema"
+    },
+    {
+      "package": "mrt:mailchimp"
+    },
+    {
+      "package": "percolatestudio:synced-cron"
+    },
+    {
+      "package": "cmather:handlebars-server"
+    },
+    {
+      "package": "meteorhacks:npm"
+    }
+  ],
+  "node_modules": "npm/node_modules",
+  "resources": [
+    {
+      "type": "prelink",
+      "file": "os/packages/telescope-newsletter.js",
+      "length": 68550,
+      "offset": 0,
+      "servePath": "/packages/telescope-newsletter.js",
+      "sourceMap": "os/packages/telescope-newsletter.js.map"
+    }
+  ]
+}

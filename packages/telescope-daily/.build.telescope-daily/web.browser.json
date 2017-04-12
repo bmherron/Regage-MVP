@@ -1,0 +1,58 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [
+    {
+      "name": "PostsDailyController",
+      "export": true
+    },
+    {
+      "name": "i"
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "telescope-lib"
+    },
+    {
+      "package": "telescope-base"
+    },
+    {
+      "package": "meteorhacks:fast-render"
+    },
+    {
+      "package": "meteorhacks:subs-manager"
+    },
+    {
+      "package": "jquery"
+    },
+    {
+      "package": "underscore"
+    },
+    {
+      "package": "iron:router"
+    },
+    {
+      "package": "templating"
+    }
+  ],
+  "resources": [
+    {
+      "type": "css",
+      "file": "web.browser/packages/telescope-daily/lib/client/stylesheets/daily.css",
+      "length": 190,
+      "offset": 0,
+      "servePath": "/packages/telescope-daily/lib/client/stylesheets/daily.css"
+    },
+    {
+      "type": "prelink",
+      "file": "web.browser/packages/telescope-daily.js",
+      "length": 22448,
+      "offset": 0,
+      "servePath": "/packages/telescope-daily.js",
+      "sourceMap": "web.browser/packages/telescope-daily.js.map"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [
+    {
+      "name": "serveRSS",
+      "export": true
+    },
+    {
+      "name": "servePostRSS"
+    },
+    {
+      "name": "serveCommentRSS"
+    },
+    {
+      "name": "post"
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "telescope-base"
+    },
+    {
+      "package": "telescope-lib"
+    }
+  ],
+  "node_modules": "npm/node_modules",
+  "resources": [
+    {
+      "type": "prelink",
+      "file": "os/packages/telescope-rss.js",
+      "length": 11050,
+      "offset": 0,
+      "servePath": "/packages/telescope-rss.js",
+      "sourceMap": "os/packages/telescope-rss.js.map"
+    }
+  ]
+}

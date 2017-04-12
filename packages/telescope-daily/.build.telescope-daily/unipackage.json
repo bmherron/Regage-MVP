@@ -1,0 +1,23 @@
+{
+  "format": "unipackage-pre2",
+  "name": "telescope-daily",
+  "summary": "Telescope daily view",
+  "version": "0.0.0+b3c32471357a7c5ac602525f8b77e1f7ec47dbd6",
+  "earliestCompatibleVersion": "0.0.0",
+  "isTest": false,
+  "unibuilds": [
+    {
+      "arch": "os",
+      "path": "os.json"
+    },
+    {
+      "arch": "web.browser",
+      "path": "web.browser.json"
+    },
+    {
+      "arch": "web.cordova",
+      "path": "web.cordova.json"
+    }
+  ],
+  "plugins": []
+}

@@ -1,0 +1,29 @@
+<template name="post_fund">
+
+ 
+
+  <div class="grid submit">
+    <form class="grid-block form-horizontal">
+      <h3>Pledge (using credit card)</h3>
+      <div class="control-group">
+        <label class="control-label">{{i18n "Name"}}</label>
+        <div class="controls"><input id="name" type="text" value="" /></div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">{{i18n "Amount"}}</label>
+        <div class="controls"><input id="amount" type="text" value="" /></div>
+      </div>
+
+      <div class="form-actions">
+        <input id="charge" type="submit" class="button" value="{{i18n 'Pledge'}}" />
+        <input id="cancel" type="submit" class="button" value="{{i18n 'Cancel'}}" style="margin-right: 10px;" />
+      </div>
+    </form>
+  </div>
+  
+  
+<!--   example Stripe payment form -->
+  
+
+ 
+</template>

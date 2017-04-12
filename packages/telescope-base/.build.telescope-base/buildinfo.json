@@ -1,0 +1,43 @@
+{
+  "builtBy": "meteor/13",
+  "buildDependencies": {
+    "os.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-base/package.js": "0e14a0e7633ce1eacdcc131995f906ed6adbafa3",
+        "/home/action/workspace/RetortB/packages/telescope-base/lib/base.js": "98b7c5e8af125a99f471863979eb95cfd261a3d1",
+        "/home/action/workspace/RetortB/packages/telescope-base/lib/base_server.js": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+      },
+      "directories": []
+    },
+    "web.browser.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-base/package.js": "0e14a0e7633ce1eacdcc131995f906ed6adbafa3",
+        "/home/action/workspace/RetortB/packages/telescope-base/lib/base.js": "98b7c5e8af125a99f471863979eb95cfd261a3d1",
+        "/home/action/workspace/RetortB/packages/telescope-base/lib/base_client.js": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+      },
+      "directories": []
+    },
+    "web.cordova.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-base/package.js": "0e14a0e7633ce1eacdcc131995f906ed6adbafa3",
+        "/home/action/workspace/RetortB/packages/telescope-base/lib/base.js": "98b7c5e8af125a99f471863979eb95cfd261a3d1",
+        "/home/action/workspace/RetortB/packages/telescope-base/lib/base_client.js": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/home/action/workspace/RetortB/packages/telescope-base/package.js": "0e14a0e7633ce1eacdcc131995f906ed6adbafa3"
+    },
+    "directories": []
+  },
+  "source": "/home/action/workspace/RetortB/packages/telescope-base",
+  "buildTimeDirectDependencies": {
+    "telescope-i18n": "0.0.0+e411d8b65032b6d97161c26cc05072f7b6725ee3",
+    "telescope-lib": "0.2.9+8f99c935e1877c58f39af5d2287bc2915e76d32e",
+    "meteor": "1.1.1"
+  },
+  "buildTimePluginDependencies": {},
+  "cordovaDependencies": null
+}

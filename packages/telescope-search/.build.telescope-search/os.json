@@ -1,0 +1,43 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [
+    {
+      "name": "adminNav",
+      "export": true
+    },
+    {
+      "name": "viewParameters",
+      "export": true
+    },
+    {
+      "name": "Searches"
+    },
+    {
+      "name": "logSearch"
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "telescope-lib"
+    },
+    {
+      "package": "telescope-base"
+    },
+    {
+      "package": "aldeed:simple-schema"
+    }
+  ],
+  "resources": [
+    {
+      "type": "prelink",
+      "file": "os/packages/telescope-search.js",
+      "length": 7835,
+      "offset": 0,
+      "servePath": "/packages/telescope-search.js",
+      "sourceMap": "os/packages/telescope-search.js.map"
+    }
+  ]
+}

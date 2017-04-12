@@ -1,0 +1,266 @@
+<template name="post_page">
+  
+  {{#if isIssue}}
+  <div class="single-post grid">
+    <div class="posts">
+      {{> UI.dynamic template=post_page_item}}
+    </div>
+    {{#if isProjectList}}
+      {{> UI.dynamic template=project_list}}
+    {{/if}}
+      {{> UI.dynamic template=comment_form}}
+      {{> UI.dynamic template=comment_list}}
+
+
+  </div>
+
+  
+  {{else}}
+  
+  <style>
+/* hide number input controls on desktop */
+input[type='number'] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+input::outer-spin-button, input::inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}  
+
+  </style>
+  
+<script type="text/javascript">
+
+var edd_scripts = {"ajaxurl":"http:\/\/164a-themes.com\/franklin\/wp-admin\/admin-ajax.php","position_in_cart":"","already_in_cart_message":"You have already added this item to your cart","empty_cart_message":"Your cart is empty","loading":"Loading","select_option":"Please select an option","ajax_loader":"http:\/\/164a-themes.com\/franklin\/wp-content\/plugins\/easy-digital-downloads\/assets\/images\/loading.gif","is_checkout":"0","default_gateway":"paypal","redirect_to_checkout":"1","checkout_page":"http:\/\/164a-themes.com\/franklin\/checkout-2\/","permalinks":"1"};
+
+</script>
+
+<script type="text/javascript">
+
+var atcfSettings = {"pages":{"is_submission":false,"is_campaign":true},"campaign":{"i18n":[],"isDonations":"","currency":{"thousands":",","decimal":".","symbol":"&#36;","round":0}}};
+
+</script> 
+
+  
+  
+<!--  <div class="body-wrapper">  -->
+
+	
+			<!-- Main content section. Everything between the header and the footer -->
+			<div role="main" class="cf" id="main"> 	
+
+
+<!-- Active campaign -->
+<section class="active-campaign current-campaign feature-block cf" style="background-color: #2980b9">
+
+	<div class="shadow-wrapper">
+
+		<div class="campaign-excerpt" style="text-transform:uppercase; font-family: Oswald, 'Helvetica Neue', Helvetica, sans-serif; ">
+			<p>{{title}}
+        {{#if isNonProfit}}  
+        <i class="fa fa-heart-o fa-2x" style="font-size:initial" title="NonProfit verified"></i> 
+        {{/if}}
+      </p>
+		  <p style="font-size: 80% ">{{tagLine}}</p>
+		</div>		
+
+
+
+
+				<div class="campaign-image">			
+				<img width="640" height="427" style="border-color: #2980b9; height: 400px; width: auto;" alt="{{title}}" class="attachment-post-thumbnail wp-post-image" src="{{photoLink}}">			
+    </div>   
+    
+		<div class="campaign-summary cf barometer-added">		
+    
+      <p class="campaign-support">
+        
+        
+        <div>
+    <div class="col-xs-2">
+        <div class="input-group" style="margin-left:145px">
+            <span class="input-group-addon">$</span>
+            <input type="number" required="" placeholder="0.00" class="form-control" id="amount" style="width:120px; font-size: 14px; padding-bottom: 5px; padding-top: 5px; margin-bottom: 3px" />
+        </div>
+    </div>
+        </div>
+        
+        <a class="button button-large" id="pledgebutton" data-reveal-id="campaign-form-27" href="#">Pledge</a>
+
+				
+			<div class="barometer" id="barometer1" data-progress="{{fundingTotalPercent}}" data-width="148" data-height="148" data-strokewidth="11" data-stroke="#fff" data-progress-stroke="#7d6e63">
+				<span><span>{{fundingTotalPercent}}<sup>%</sup></span> Funded</span>
+			</div>	
+      
+      
+      <!--<div class="barometer" data-progress="{{fundingTotalPercent}}" data-width="148" data-height="148" data-strokewidth="11" data-stroke="#fff" data-progress-stroke="#7d6e63"><svg height="148" version="1.1" width="148" xmlns="http://www.w3.org/2000/svg" style="overflow: hidden; position: relative; left: -0.135498046875px; top: -0.902801513671875px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.0</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><path fill="none" stroke="#ffffff" d="M74,8A66,66,0,1,1,73.99,8" stroke-width="11" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#7d6e63" d="M74,8A66,66,0,1,1,73.99,8" stroke-width="12" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path></svg>
+				<span style="opacity: 1;"><span style="opacity: 1;">{{fundingTotalAmount}}</span> Funded</span>
+			</div>	-->
+
+			<ul>
+				<li class="campaign-raised">
+					<span>{{fundingTotalFormatted}}</span>
+					Pledged		
+				</li>
+				<li class="campaign-goal">
+					<span>{{fundingGoalFormatted}}</span>
+					Goal				
+				</li>
+				<li class="campaign-backers">
+					<span>{{backers}}</span>
+					Backers				</li>			
+			</ul>
+        
+
+        
+       
+        <div style="width:100%" class="campaign-countdown" id="countdownmain">
+         <div style="float: left; width:70%" id="countdownx">
+         </div>
+					<span style="float:right">Time left to donate</span>
+				</div>
+ 
+ <style>
+.goto-edit:hover {color: rgb(128,128,128)}
+ </style>
+        
+			<ul style="margin-top:5px;min-width: 230px">
+        
+				<li class="campaign-backers">
+          <br/>
+					<span>
+
+            {{>  postShare}}
+          </span>
+								</li>		
+        
+          {{#if can_edit}}
+      <li> <a style="float:right" href="/posts/{{_id}}/edit" class="edit-link goto-edit">Edit</a>
+           <a style="float:right;padding-right:40px;" href="/fundcollect/{{_id}}" class="edit-link goto-edit">Collect</a>
+        </li>
+        {{/if}}
+        
+			</ul>
+
+
+      
+		</p>
+		</div>   				
+		
+    <!--<ul class="share horizontal">
+      <li><h6>{{>  postShare}}</h6></li>
+    </ul>-->
+      
+		<!--<ul class="share horizontal">
+	<li><h6>Share</h6></li>
+	<li class="share-twitter icon sharrre"><img src="/img/twitter-large.png"/><div class="box"><a href="#" class="count">0</a></div></li>	<li data-icon="" class="share-facebook icon sharrre"><img src="/img/facebook-large.png"/><div class="box"><a href="#" class="count">0</a></div></li>	<li data-icon="" class="share-googleplus icon sharrre"><div class="box"><a href="#" class="count">0</a></div></li>	<li data-icon="" class="share-linkedin icon sharrre"><div class="box"><a href="#" class="count">0</a></div></li>	<li data-icon="" class="share-pinterest icon sharrre"><div class="box"><a href="#" class="count">0</a></div></li>	<li data-reveal-id="campaign-widget-sharing" data-icon="" class="share-widget icon"></li></ul>-->
+
+
+  </div>
+</section>
+
+</div>
+
+<!-- End active campaign -->			
+
+			<div class="content-wrapperN">
+
+								
+				<div class="content">
+	
+					<!-- Campaign content -->					
+					
+<div class="post-416 type-download status-publish has-post-thumbnail hentry campaign-content has-featured-image block entry-block edd-download edd-download-cat-technology" id="campaign-416" style="border:1px; border-color:#e2dedb;; border-style:solid">
+		
+	<div class="title-wrapper">	
+		<h2 class="block-title" style="color:rgb(217, 91, 67);">{{title}}</h2>
+	</div>
+
+	<div class="entry">
+    
+    <h3 class="subtitles">The Story</h3>
+    
+<div itemprop="description"><p>{{bodyWhat}}</p>
+  </div>
+    <br>
+    
+    <h3 class="subtitles">Where Does the Money Go?</h3>
+    
+  <div itemprop="description" ><p>{{bodyWhere}}</p> 
+   </div>
+    <br>
+    
+    <h3 class="subtitles">Who is Behind It?</h3>
+<div itemprop="description"> <p>{{bodyWho}}</p>
+  </div>
+    <br>
+
+	<!--	<div itemprop="description" itemtype="http://schema.org/Product" itemscope=""><p>{{body}}</p> -->
+</div>
+
+
+</div>					<!-- End campaign content -->
+
+						
+</div>
+
+
+
+
+	<!--			<aside class="sidebar sidebar-campaign"> -->
+
+<!--	<aside class="widget cf widget_campaign_author_widget" id="campaign_author_widget-2"><div class="title-wrapper"><h4 class="widget-title">Creator</h4></div>
+		<div class="author-description cf">
+ -->
+					<!--					<div class="author-avatar">{{>avatar user=this}} -->
+					<!--<img width="120" height="120" class="avatar avatar-120 photo" src="http://0.gravatar.com/avatar/439f2f88cbb233c881b4d55b440d60f7?s=120&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D120&amp;r=G" alt="">-->				
+			
+<!--			<div  style="float:left; "> -->
+	<!--			<h3 style="margin-top: 5px;">{{authorName}}</h3> -->
+
+<!--			</div>   -->
+
+<!--				<p class="author-links" style="font-size: 10px;">   -->
+<!--										<a  class="with-icon" title="Visit website" href="http://{{post_user_site}}"><img src="/img/w.gif"/>{{post_user_site}}</a><br>   -->
+				
+<!--										<a  class="with-icon" title="Visit Twitter profile" href="http://twitter.com/{{getTwitter}}"><img src="/img/twitter-small.png"/>twitter.com/{{getTwitter}}</a><br>   -->
+				
+							<!--<a data-icon="" class="with-icon" title="Visit ericnicolaas's Facebook profile" href="https://www.facebook.com/Studio164a">www.facebook.com/Studio164a</a>-->  
+					
+	<!--		</p>   -->
+
+	<!--		<p class="author-bio">{{post_user_bio}}</p>   -->
+
+<!--			<p class="author-profile-link center"><a class="button button-alt" href="/{{profileUrl}}" target="">Profile</a></p> --> 
+
+	<!--	</div>		 -->
+
+
+	<!--		</aside>  -->
+	<!--</aside>  -->
+			
+		<!--		</div>  -->
+</div>   
+
+  <ul class="comments comment-list" style="margin-right:10px">
+    
+     {{> UI.dynamic template=comment_form}}
+      {{> UI.dynamic template=comment_list}}  </ul>  
+        
+        
+   <!-- </div> -->
+			<!-- End main content section -->
+			
+
+
+
+
+  
+  {{/if}}
+</template>

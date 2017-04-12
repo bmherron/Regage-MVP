@@ -1,0 +1,94 @@
+<template name="new_nav" style="position:fixed">
+
+<style>
+    .nav-action {font-family: Oswald, 'Helvetica Neue', Helvetica, sans-serif; 
+      font-size: 15px; letter-spacing: 1px; line-height: 30px; 
+      text-transform: uppercase;color:#7d6e63 !important; margin-right: 7px;}
+    .nav-action:hover {color: #a73b2d !important; text-decoration: none !important;   }
+</style>	 
+  <header id="header" class="cf wrapper" style="padding-top:4px; background-color:white">			
+    
+    <div class="shell">
+
+			<div class="site-identity site-logo" style="float:left;display:inline-block;margin:0 auto;padding-top:0px; padding-bottom:0px">				
+
+					
+					<!-- Site title -->
+					<div class="site-title"> 
+            <a href="javascript:Session.set('feed','2');Router.go('/')" alt="Go to homepage"><img src="/img/image3811.png"  style="height:75px">
+            </a>
+          </div>	
+					<!-- End site title -->		
+
+      </div>			
+
+   
+    
+				<!-- Navigation -->
+		<div class="site-navigation wrapper" style="margin: 0 auto;float:right;clear:none;width:calc(100% - 275px);padding-top:20px;display:inline-block;position:relative">		
+				
+			<nav role="navigation">
+
+            
+      <ul class="nav secondary-nav desktop-nav has-dropdown header-module desktop-only" style="margin-top: 15px;">
+          <li style="display:inline-block;">
+            <a class="nav-action" href="javascript:Session.set('feed','2');Router.go('/top')"> Home</a>
+          </li>
+          <li style="display:inline-block;">
+            <a  class="nav-action"  href="/howitworks">How it Works</a>
+          </li>         
+          <li style="display:inline-block;">
+           <a  class="nav-action"  href="/aboutus">About Us</a>
+          </li>
+        
+          <li style="display:inline-block;">
+            {{#if isLoggedIn}}
+                <div class="user-menu dropdown header-submodule">
+                  <a class="nav-action view dropdown-top-level" href="#" style="margin-right: 0px;">
+                    <span class="fa-stack">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+                    </span>
+                    {{name}}
+                  </a>
+                  <div class="dropdown-menu">
+                    <ul role="menu" aria-labelledby="dLabel">
+                      <li><a href="{{profileUrl}}" style="display:block">{{i18n "Profile"}}</a></li>
+                      <li><a href="/account" style="display:block">{{i18n "Edit Account"}}</a></li> 
+                      <li><a href="/sign-out" style="display:block">{{i18n "Sign Out"}}</a></li>
+                    </ul>
+                  </div>
+                </div>
+            {{/if}}
+          </li>
+          <li style="display:inline-block;">
+            {{#if isLoggedIn}}
+              <div class="dropdown notifications-menu header-submodule">
+                <a class="nav-action view  dropdown-top-level" href="#" style="margin-right: 0px;">{{notification_count}}</a>
+                <div class="dropdown-menu">
+                  <ul role="menu" aria-labelledby="dLabel">
+                    {{#if hasNotifications}}
+                      <li><a href="#" class="button mark-as-read">{{i18n "Mark as read"}}</a></li>  
+                      {{#each notifications}}
+                        {{> UI.dynamic template=notificationItem}}
+                      {{/each}}
+                    {{else}}
+                      <li>No notifications</li>
+                    {{/if}}
+                  </ul>
+                </div>
+              </div>
+            {{/if}}
+
+          </li>
+      </ul>  
+            
+
+
+    </nav>
+	</div>
+      </div>
+			    <!-- End navigation -->
+  </header>
+  
+</template>

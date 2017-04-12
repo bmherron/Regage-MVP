@@ -1,0 +1,574 @@
+<template name="posts_list">
+  {{> UI.dynamic template=postsListIncoming data=incoming}}
+
+
+ <style>
+   
+   
+
+   
+   
+   
+   
+   
+   /*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+	width: 100%;
+}
+.span_2_of_3 {
+	width: 66.1%;
+}
+.span_1_of_3 {
+	width: 32.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.span_3_of_3 {
+		width: 100%; 
+	}
+	.span_2_of_3 {
+		width: 100%; 
+	}
+	.span_1_of_3 {
+		width: 100%;
+	}
+}
+   
+   
+   .style-1 input[type="text"] {
+  padding: 10px;
+  border: solid 1px gainsboro;
+  -webkit-transition: box-shadow 0.3s, border 0.3s;
+  -moz-transition: box-shadow 0.3s, border 0.3s;
+  -o-transition: box-shadow 0.3s, border 0.3s;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+.style-1 input[type="text"]:focus, .style-1 input[type="text"].focus {
+  border: solid 1px #B9DEFA;
+  -webkit-box-shadow: 0 0 5px 1px #d1e8fa;
+  -moz-box-shadow: 0 0 5px 1px #d1e8fa;
+  box-shadow: 0 0 5px 1px #d1e8fa;
+}
+.style-1 textarea {
+  padding: 10px;
+  border: solid 1px gainsboro;
+  -webkit-transition: box-shadow 0.3s, border 0.3s;
+  -moz-transition: box-shadow 0.3s, border 0.3s;
+  -o-transition: box-shadow 0.3s, border 0.3s;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+.style-1 textarea:focus, .style-1 textarea.focus {
+  border: solid 1px #B9DEFA;
+  -webkit-box-shadow: 0 0 5px 1px #d1e8fa;
+  -moz-box-shadow: 0 0 5px 1px #d1e8fa;
+  box-shadow: 0 0 5px 1px #d1e8fa;
+}
+   
+.fileUpload {
+	position: relative;
+	overflow: hidden;
+	margin: 10px;
+}
+.fileUpload input.upload {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}        
+
+   
+   .has-dropdown2 .dropdown-menu ul li {
+      padding-bottom: 5px !important;
+      margin-bottom: 5px !important;
+      border-bottom: 1px solid #eeeeee; }
+      /* line 43, ../scss/specific/_dropdown.scss */
+      .has-dropdown2 .dropdown-menu ul li:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none; }
+      /* line 48, ../scss/specific/_dropdown.scss */
+      .has-dropdown2 .dropdown-menu ul li a {
+        font-size: 12px !important; }
+   
+  </style>
+  
+  
+  {{#if isProject}}  
+  <style type="text/css" >
+               
+    
+.posts-wrapper .grid .grid-module {
+  background:transparent;
+  box-shadow:none;
+}
+.posts.list {
+  display:block;
+  text-align:center;
+  box-sizing:border-box;
+}
+.posts.list > .post2 {
+  width:calc(32%);
+  min-width:350px;
+  height:420px;
+  padding-top:10px;
+  margin:5px;
+  display:inline-block;
+  box-sizing:border-box;
+}
+.post2:first-child {
+  border-radius:none;
+}
+.post2 {
+  box-shadow:0 1px 3px rgba(26,53,71,.08), 0 0 0 1px rgba(26,53,71,.04), 0 1px 1px rgba(26,53,71,.06);
+  border-bottom:none;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  -ms-border-radius:3px;
+  -o-border-radius:3px;
+  border-radius:3px;
+}
+.post-thumbnail {
+  float:none;
+  vertical-align:top
+}
+.post-thumbnail-link2 {
+  max-width:270px;
+  max-height:240px;
+}
+.post2 .right-modules, .post-actions.left-right.cell, .post-rank, .post-upvote {
+  display:none;
+}
+  .more-button {
+  float:left;
+}
+.footer {
+  position:relative;
+}
+
+.post-content2 {
+
+ flex-shrink: 1 !important;
+   -moz-flex-shrink: 1 !important;
+     -webkit-flex-shrink: 1 !important;
+}
+
+.post-thumbnail {
+
+ float:none;
+ margin-right:0px !important;
+}
+.post2 .modules-group .inner {
+ display:block;
+}
+
+   
+  .row:after {
+     content: "";
+     display: table;
+     clear: both;
+   }
+   .smallerbutton {
+     line-height:20px; height:20px; width: 90px;font-size:10px; white-space: nowrap;padding-left: 5px; padding-right: 5px;letter-spacing: 1px;
+   }
+  </style>  
+  
+    
+  {{#each postsFeatured}}    
+    {{> UI.dynamic template=post_featured}}    
+  {{/each}}
+    
+  
+
+  <div class="campaigns-grid-wrapper">  
+  <div class="posts-wrapper grid grid-module" style="padding-bottom:60px; margin-left:0px; margin-right:0px; max-width:1170px; background-color:white">
+    
+    
+    
+
+  
+
+    
+
+<div class="row" style="margin-bottom: 0px; padding-left:4%; padding-right:4%; border-bottom-color:#e2dedb; border-bottom-width:2px; border-bottom-style:solid; margin-left:0px">
+  
+<div class="section group">
+
+  
+    <div class="col span_3_of_3"  style="height:50px; margin-bottom: 30px;">
+          <div style="text-align:center;">
+            <a href="#" class="engagelink1 button entry-button  button-alt" style= "padding-left:10px;padding-right:10px;height:50px; border: 2px solid #d1d9e2; color: #a8b4c1; border-radius: 5px; transition: all .5s; {{feedButtonStyle 1}}">Engages</a>
+            <a href="#" class="crowdfundlink1 button entry-button  button-alt" style= "padding-left:10px;padding-right:10px;height:50px; border: 2px solid #d1d9e2; color: #a8b4c1; border-radius: 5px; transition: all .5s; {{feedButtonStyle 2}}">Projects</a>
+<!--
+
+            <p style="text-align: center;">
+              <a href="/submit/1" class="button entry-button  button-alt" style="margin-top:20px">Start an {{i18n "Issue"}}</a>
+            </p>
+-->
+          </div>  
+	</div>
+  
+  
+  <div>
+        <div style="clear:both"></div>
+        <div class="col "  style="margin-top:5px; width:40%;display:inline-block;margin:0 auto;">
+
+          <ul class="nav secondary-nav has-dropdown has-dropdown2 header-module " style="margin-right: -15px;margin-bottom:0px;padding-bottom:0px;padding-left:0px; z-index:200">          
+            <li style="display:inline-block;margin-top;8px;">
+
+                      <div class="user-menu dropdown header-submodule" >
+                        <a class="nav-action view dropdown-top-level smallerbutton" href="#" style="margin-right: 0px;font-size:10pt;">
+
+                          {{community}}
+                        </a>
+                        <div class="dropdown-menu" id="comm-menu" style="left:0px;">
+                          <ul role="menu" aria-labelledby="dLabel">
+                            <li><a id="comm1" href="#" style="display:block;padding-bottom:0px;margin-bottom:0px;">My Community</a></li>
+                            <li><a id="comm2" href="#" style="display:block;padding-bottom:0px;margin-bottom:0px;">My Area</a></li> 
+                            <li><a id="comm3" href="#" style="display:block;padding-bottom:0px;margin-bottom:0px;">My State</a></li>
+                            <li><a id="comm4" href="#" style="display:block;padding-bottom:0px;margin-bottom:0px;">My Peers</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                </li>
+          </ul>
+
+
+        </div>
+	
+  
+
+
+
+
+      <div class="col " style="margin-top:5px; width:60%;display:inline-block;margin:0 auto;">
+        <div style="text-align:right;">
+
+
+            <div >
+              <a class="button entry-button button-alt smallerbutton" style="color: #a8b4c1; border: 2px solid #d1d9e2; background-color: #e74c3c ;width:70px;" id="top1" >Top</a>
+              <a class="button entry-button button-alt smallerbutton" style="color: #a8b4c1; border: 2px solid #d1d9e2; background-color: white;width:70px;" id="new1" >New</a>
+               {{> UI.dynamic template=posts_list_search}}
+           </div>
+        </div>
+
+        
+
+
+      </div>
+    
+    
+  </div>   
+
+  
+  </div>
+
+</div>   
+  
+
+
+
+      
+
+      <h3 style="color:#7D6E63; letter-spacing: 0.2rem; margin-left:8px" class="section-title">Projects</h3>     
+    
+
+    <div class="posts list" style="background-color:white">
+      {{#each posts}}
+     
+         {{> UI.dynamic template=post_item}}
+  
+      {{/each}}
+    </div>
+    <div style="clear: both;"></div>
+
+  </div>
+  {{> UI.dynamic template=postsLoadMore}}
+</div>
+  
+  
+{{else}}
+  
+   {{#each postsFeatured}}    
+    {{> UI.dynamic template=post_featured}}    
+  {{/each}}
+  
+  
+
+ <style> 
+  .row:after {
+     content: "";
+     display: table;
+     clear: both;
+   }
+   .smallerbutton {
+     line-height:20px; height:20px; width: 90px;font-size:10px; white-space: nowrap;padding-left: 5px; padding-right: 5px;letter-spacing: 1px;
+   }
+  </style>
+
+
+<div class="row" style="margin-bottom: 0px; padding-left:4%; padding-right:4%; border-bottom-color:#e2dedb; border-bottom-width:2px; border-bottom-style:solid; margin-left:0px">
+  
+<div class="section group">
+
+  
+    <div class="col span_3_of_3"  style="height:50px; margin-bottom: 30px;">
+          <div style="text-align:center;">
+            <a href="#" class="engagelink1 button entry-button  button-alt" style= "padding-left:10px;padding-right:10px;height:50px; border: 2px solid #d1d9e2; color: #a8b4c1; border-radius: 5px; transition: all .5s; {{feedButtonStyle 1}}">Engages</a>
+            <a href="#" class="crowdfundlink1 button entry-button  button-alt" style= "padding-left:10px;padding-right:10px;height:50px; border: 2px solid #d1d9e2; color: #a8b4c1; border-radius: 5px; transition: all .5s; {{feedButtonStyle 2}}">Projects</a>
+<!--
+
+            <p style="text-align: center;">
+              <a href="/submit/1" class="button entry-button  button-alt" style="margin-top:20px">Start an {{i18n "Issue"}}</a>
+            </p>
+-->
+          </div>  
+	</div>
+  
+  
+  
+  
+ <!-- {{#if firstTime}}<div class="callout left" style="margin-left:-240px; margin-bottom:-30px; text-align:center !important">Take a look at what's going on in your different communities!</div>
+  {{/if}}
+  -->
+  
+  <style>
+  div.callout {
+	height: 60px;
+	width: 200px;
+	float: left;
+}
+
+div.callout {
+	background-color: #E85141;;
+	background-image: -moz-linear-gradient(top, #444, #444);
+	position: relative;
+	color: white;
+	padding: 10px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 20px #999;
+	margin: 25px;
+	min-height: 50px;
+	border: 1px solid #E85141;
+	text-shadow: 0 0 1px #000;
+	
+	/*box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;*/
+}
+
+.callout::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: 0.8em solid transparent;
+	position: absolute;
+}
+
+.callout.top::before {
+	left: 45%;
+	bottom: -20px;
+	border-top: 10px solid #444;
+}
+
+.callout.bottom::before {
+	left: 45%;
+	top: -20px;
+	border-bottom: 10px solid #444;
+}
+
+.callout.left::before {
+	right: -20px;
+	top: 40%;
+	border-left: 10px solid #444;
+}
+
+.callout.right::before {
+	left: -20px;
+	top: 40%;
+	border-right: 10px solid #444;
+}
+
+.callout.top-left::before {
+	left: 7px;
+	bottom: -20px;
+	border-top: 10px solid #444;
+}
+
+.callout.top-right::before {
+	right: 7px;
+	bottom: -20px;
+	border-top: 10px solid #444;
+}
+  
+  </style>
+  <div>
+        <div style="clear:both"></div>
+        <div class="col "  style="margin-top:5px; width:40%;display:inline-block;margin:0 auto;">
+
+          <ul class="nav secondary-nav has-dropdown has-dropdown2 header-module " style="margin-right: -15px;margin-bottom:0px;padding-bottom:0px;padding-left:0px; z-index:200">          
+            <li style="display:inline-block;margin-top;8px;">
+
+                      <div class="user-menu dropdown header-submodule" >
+                        <a class="nav-action view dropdown-top-level smallerbutton" href="#" style="margin-right: 0px;font-size:10pt;">
+
+                          {{community}}
+                        </a>
+                        <div class="dropdown-menu" id="comm-menu" style="left:0px;">
+                          <ul role="menu" aria-labelledby="dLabel">
+                            <li><a id="comm1" href="#" style="display:block;padding-bottom:0px;margin-bottom:0px;">My Community</a></li>
+                            <li><a id="comm2" href="#" style="display:block;padding-bottom:0px;margin-bottom:0px;">My Area</a></li> 
+                            <li><a id="comm3" href="#" style="display:block;padding-bottom:0px;margin-bottom:0px;">My State</a></li>
+                            <li><a id="comm4" href="#" style="display:block;padding-bottom:0px;margin-bottom:0px;">My Peers</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                </li>
+          </ul>
+
+
+        </div>
+	
+  
+
+
+
+
+      <div class="col " style="margin-top:5px; width:60%;display:inline-block;margin:0 auto;">
+        <div style="text-align:right;">
+
+
+            <div class="test1">
+              <a class="button entry-button button-alt smallerbutton" id="top1" style="color: #a8b4c1; border: 2px solid #d1d9e2; background-color: #e74c3c ;width:70px;" >Top</a>
+              <a class="button entry-button button-alt smallerbutton" id="new1" style="color: #a8b4c1; border: 2px solid #d1d9e2; background-color: white;width:70px;" >New</a>
+               {{> UI.dynamic template=posts_list_search}}
+           </div>
+        </div>
+
+        
+
+
+      </div>
+    
+    
+  </div>   
+
+  
+  </div>
+
+</div>   
+  
+
+  
+  
+  <div style="background-color: white;padding-left: 4%; padding-right: 4%;">      
+      <div style="clear:both"></div>
+      <h3 style="clear: both; color:#7D6E63; letter-spacing: 0.2rem; margin-left:10px;display:inline-block;" class="section-title">  Engages       </h3> 
+    
+  {{#if canPost}} 
+     
+     <div class="grid_feed-block" style="margin-left: 4%; margin-right: 4%;margin-top: 20px;display:block;background-color:white"> 
+    <div class="post-avatar_feed">
+      <div style="float:left; margin-right:5px; min-height:60px;">
+
+          <img src="{{avatarLink}}" title="avatar" width="60">
+
+        </div>  
+    </div>
+       
+       
+     
+       <div class="style-1 clearfix" style="display:inline-block;max-width:95%">
+        <input type="text" style="width: 300px;max-width:95%" placeholder="Share with Your Neighbors" id="titleInput">
+      </div>
+
+      <div class="share-tool-bar hidden style-1">
+         <div style="margin-left: 0px; margin-top: 0px;display:inline-block;max-width:95%"> 
+       <div style="clear:both"></div>
+ 
+        <textarea style="width: 300px;max-width:95%" placeholder="Share an update..." id="descInput"></textarea>
+        <input class="hidden" type="text" id="uploadFile" placeholder="Photo file" disabled="disabled" style="height:12px;display:block;" />        
+      </div>        
+      <div style="margin-left: 10px; margin-top: 0px;display:inline-block;"> 
+
+         <div class="fileUpload btn btn-success">
+            <span><i class="fa fa-file-photo-o fa-lg"></i> Add Photo</span>
+            <input id="uploadBtn" type="file" class="upload" />
+         </div>
+         <a class="btn btn-lg btn-success" id="savePost" href="#">
+          <i class="fa fa-share-square-o fa-lg pull-left"></i> Share</a>
+      </div>
+
+       
+        
+      </div>
+       
+         
+    </div>
+ {{/if}} 
+  </div>  
+
+  
+  
+  
+ <div>  
+    
+   
+   <div class="posts list" style="background-color:white; padding-bottom:80px">
+    
+
+      
+      
+      {{#each posts}}
+
+        {{> UI.dynamic template=post_item}}
+      {{/each}}
+    </div>
+  </div>
+  {{> UI.dynamic template=postsLoadMore}}
+
+  
+{{/if}}
+  
+</template>

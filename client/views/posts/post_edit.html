@@ -1,0 +1,284 @@
+<template name="post_edit">
+  <style>
+    .cp3_modelcon .cp3_p_icon {
+    color: #000;
+    float: right;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    width: 220px;
+}
+    
+    
+    
+    .tipIcon {
+display: block;
+text-align: center;
+text-shadow: 0.5px 1px 0 #000;
+margin-bottom: 4px;
+width: 40px;
+line-height: 18px;
+height: 18px;
+font-size: 12px;
+color: #fff;
+background: #0095d9;
+border-radius: 2px;
+}
+    
+    .cp3_modelcon .cp3_editcon {
+    margin-bottom: 40px;
+    height: auto;
+    overflow: hidden;
+    padding: 2px;
+}
+    
+    .cp3_modelcon .cp3_editcon .cp3_edit_txt {
+    width: 420px;
+    height: 24px;
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+    padding: 9px 13px;
+    line-height: 24px;
+    color: #02A8B8;
+ }
+      </style>
+  
+  <div class="grid submit">
+    {{#with post}}
+    
+    
+    
+      
+ <div class="banner" style="background-color:#E64B3B">
+	<div class="shadow-wrapper">
+		<h1 class="banner-title">Edit {{postTypeInLabel}} </h1>
+	</div>
+</div>
+    
+     <form class="grid-block form-horizontal">
+
+      <div style="width:100%;float:left" class="control-group">
+        <label class="l">{{i18n "Title"}}</label>
+        <br/>
+        <div style="margin-left:0px; width:100%; float:left;clear: right;"  class="controls">
+          <input style="float:left; width:60%; max-width:600px" id="title" type="text" value="{{title}}" />
+
+        </div>
+      </div>
+      
+        <div style="width:100%;float:left" class="control-group">
+          <label class="">{{i18n "Photo"}}</label>
+          <br/>
+          <div style="margin-left:0px; width:100%; float:left" class="controls">
+  	        <img class="thumbnail" style="height: 100px;float:left;" src="{{photoLink}}"/>
+          <input type="file" name="image" id="fileinput">
+            <input type="file" name="image" id="npfileinput" style="display:none">
+          </div>
+        </div>
+
+       
+       <div style="width:100%;float:left" class="control-group {{fundingHidden}}" id="fundingGoalGroup">
+          <label class="">{{i18n "Funding Goal"}}</label>
+          <br/>
+          <div style="margin-left:0px; width:100%; float:left" class="controls">
+            <input style="float:left; width:20%; max-width:600px;margin-right:40%" id="fundingGoal" type="text" value="{{fundingGoal}}"  disabled/>
+
+          </div>
+       </div>       
+
+       <div style="width:100%;float:left" class="control-group {{fundingHidden}}" id="fundingDurationGroup">
+          <label class="">{{i18n "Funding Duration"}}</label>
+          <br/>
+          <div style="margin-left:0px; width:100%; float:left" class="controls">
+            <input style="float:left; width:20%; max-width:600px;margin-right:40%" id="fundingDuration" type="text" value="{{fundingDuration}}" disabled/>
+
+          </div>
+       </div>  
+       
+       
+
+   {{#if isProject}}     
+      
+      <div style="width:100%;float:left" class="control-group">
+        <label class="">What it is</label>
+         <br/>
+     <div style="margin-left:0px; width:100%; float:left" class="controls"><textarea style="float:left; width:60%; max-width:600px" id="bodyWhat" value="{{bodyWhat}}" class="input-xlarge"></textarea>   
+         </div>
+               </div>
+      
+      <div style="width:100%;float:left" class="control-group">
+        <label class="">Where Does the Money Go?</label>
+         <br/>
+     <div style="margin-left:0px; width:100%; float:left" class="controls"><textarea style="float:left; width:60%; max-width:600px" id="bodyWhere" value="{{bodyWhere}}" class="input-xlarge"></textarea>   
+         </div>
+               </div>
+      
+      <div style="width:100%;float:left" class="control-group">
+        <label class="">Who is Behind It</label>
+         <br/>
+     <div style="margin-left:0px; width:100%; float:left" class="controls"><textarea style="float:left; width:60%; max-width:600px" id="bodyWho" value="{{bodyWho}}" class="input-xlarge"></textarea>   
+         </div>
+               </div>
+      
+        <div  style="float:left;width:100%;" class="control-group">
+          <label class="">{{i18n "NonProfit?"}}</label>
+          <div style="margin-left:0px; width:100%; float:left" class="controls">
+            <input type="checkbox" name="nonProfit" id="nonProfit" {{isNonProfit}} />
+          </div>
+        </div>
+        
+        <div style="width:100%;float:left" class="control-group">
+       	  <label class="" for="message">{{i18n "NonProfit Documentation"}}</label>
+          <br/>
+          <div style="margin-left:0px; width:100%; float:left" class="controls">
+            <a style="float:left;width:20%;" href="{{nonProfitDocLink}}" target="_blank">{{nonProfitDocLabel}}</a>
+	   
+            <input style="float:left; width:40%;" id="npfileinput" type="file"/>
+          
+           </div>
+         </div> 
+
+      
+      
+   {{else}}   
+
+       <div style="width:100%;float:left" class="control-group">
+        <label class="">{{i18n "Description"}}</label>
+         <br/>
+     <div style="margin-left:0px; width:100%; float:left" class="controls"><textarea style="float:left; width:60%; max-width:600px" id="body" value="{{body}}" class="input-xlarge"></textarea>   
+         </div>
+               </div>     
+  
+  {{/if}}
+       
+       
+       
+       
+       
+
+     <!--
+        <div style="width:100%;float:left" class="control-group">
+        <label class="control-label">{{i18n "URL"}}</label>
+          <br/>
+        <div style="margin-left:0px; width:100%; float:left" class="controls"><input style="float:left; width:60%; max-width:600px" id="url" type="text" value="{{url}}" />
+             <div style="float:right; width:35%" class="cp3_p_icon"><em class="tipIcon">TIP</em>Create a short and catchy title for the project - we recommend no more than 35 characters. This will be the first thing someone reads about your project. Cannot be modified after the project is submitted.</div>
+          </div>
+      </div>
+    -->
+       
+    <!--
+       {{#if shorten}}
+        <div style="width:100%;float:left" class="control-group">
+          <label class="control-label post-form-url">{{i18n "Short URL"}}</label>
+          <div class="controls"><input id="short-url" type="text" value="{{shortUrl}}" /></div>
+        </div>
+       {{/if}}
+    -->
+        {{#if categoriesEnabled}}
+        <div style="width:100%;float:left" class="control-group post-form-category">
+          <label class="control-label">{{i18n "Categories"}}</label>
+          <div class="controls">
+            {{#each categories}}
+            <label class="radio inline">
+              <input id="category_{{_id}}" type="checkbox" value="{{_id}}" name="category" {{checked}} /> {{name}}
+            </label>
+            {{/each}}
+          </div>
+        </div>
+        {{/if}}
+    
+       
+
+       
+       
+       
+      <!--    <div style="width:100%;float:left" class="control-group {{fundingStatusHidden}}">
+            <label class="control-label">{{i18n "Funding Active?"}}</label>
+        
+           <div style="margin-left:0px; width:100%; float:left" class="controls"><input style="float:left; width:20%; max-width:600px;margin-right:40%"
+              type="checkbox" name="fundingStatus" id="fundingStatus" {{isFundingStatusActive}} />
+            <div style="float:right; width:35%" class="cp3_p_icon"><em class="tipIcon">TIP</em>Create a short and catchy title for the project - we recommend no more than 35 characters. This will be the first thing someone reads about your project. Cannot be modified after the project is submitted.</div>
+            </div>
+          </div>   -->
+
+       
+        {{#if isAdmin}}
+        <div  style="float:left;width:100%;border-top: 1px solid grey;" class="control-group">
+        </div>
+
+        {{#if isProject}}   
+           <div  style="float:left;width:100%;" class="control-group">
+              <label class="control-label">{{i18n "NonProfit Approved?"}}</label>
+              <div style="margin-left:0px; width:100%; float:left" class="controls">
+                <input type="checkbox" name="nonProfitApproved" id="nonProfitApproved" {{isNonProfitApproved}} />
+              </div>
+            </div>
+        {{/if}}
+       
+         <!--<div style="width:100%;float:left" class="control-group post-form-sticky">
+            <label class="control-label">{{i18n "Inactive?"}}</label>
+          <br/>
+            <div style="margin-left:0px; width:100%; float:left" class="controls">
+              {{inactive}}
+            </div>
+          </div> -->
+       
+       
+          <div style="width:100%;float:left" class="control-group post-form-sticky">
+            <label class="control-label">{{i18n "Sticky?"}}</label>
+          
+            <div style="margin-left:0px; width:100%; float:left" class="controls"><input style="float:left; width:20%; max-width:600px;margin-right:40%"
+               type="checkbox" name="sticky" id="sticky" {{isSticky}} />
+            </div>
+          </div>
+          <div style="width:100%;float:left" class="control-group post-form-user">
+            <label class="control-label">{{i18n "User"}}</label>
+          <br/>
+           <div style="margin-left:0px; width:100%; float:left" class="controls">
+              <select id="postUser">
+                {{#each users}}
+                  <option {{isSelected ..}} value="{{_id}}">{{userName}}</option>
+                {{/each}}
+              </select>
+            </div>
+          </div>
+          <div style="width:100%;float:left" class="control-group post-form-status">
+            <label class="control-label">{{i18n "Status"}}</label>
+          <br/>
+           <div style="margin-left:0px; width:100%; float:left" class="controls">
+              <label class="radio inline">
+                <input id="status_pending" type="radio" value="1" name="status" {{hasStatusPending}} /> {{i18n "Pending"}}
+              </label>
+              <label class="radio inline">
+                <input id="status_approved" type="radio" value="2" name="status" {{hasStatusApproved}} /> {{i18n "Approved"}}
+              </label>
+              <label class="radio inline">  
+                <input id="status_rejected" type="radio" value="3" name="status" {{hasStatusRejected}} /> {{i18n "Rejected"}}
+              </label>
+            </div>
+          </div>
+          <div style="width:100%;float:left" id="postedAt" class={{showPostedAt}}>
+            <div class="control-group">
+              <label class="control-label post-form-date">{{i18n "Posted Date"}}</label>
+              <div style="margin-left:0px; width:100%; float:left" class="controls"><input style="float:left; width:60%; max-width:600px" id="postedAtDate" type="text" value="{{postedAtDate}}" /></div>
+            </div>
+            <div class="control-group">
+              <label class="control-label post-form-time">{{i18n "Posted Time"}}</label>
+             <div style="margin-left:0px; width:100%; float:left" class="controls"><input style="float:left; width:60%; max-width:600px" id="postedAtTime" type="text" value="{{postedAtTime}}" /></div>
+            </div>
+          </div>
+        {{/if}}
+        <div class="form-actions">
+          <a class="delete-link" href="/posts/deleted">{{i18n "Delete Post"}}</a>
+          <input type="submit" class="button" value="Update" />
+        </div>
+      </form>
+    {{/with}}
+  </div>
+</template>
+
+

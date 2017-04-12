@@ -1,0 +1,33 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [
+    {
+      "name": "compareVersions",
+      "export": true
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "telescope-lib"
+    },
+    {
+      "package": "telescope-base"
+    },
+    {
+      "package": "http"
+    }
+  ],
+  "resources": [
+    {
+      "type": "prelink",
+      "file": "os/packages/telescope-update-prompt.js",
+      "length": 3098,
+      "offset": 0,
+      "servePath": "/packages/telescope-update-prompt.js",
+      "sourceMap": "os/packages/telescope-update-prompt.js.map"
+    }
+  ]
+}

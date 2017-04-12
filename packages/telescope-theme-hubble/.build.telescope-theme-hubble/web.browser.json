@@ -1,0 +1,32 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "telescope-lib"
+    },
+    {
+      "package": "telescope-base"
+    }
+  ],
+  "resources": [
+    {
+      "type": "css",
+      "file": "web.browser/packages/telescope-theme-hubble/lib/client/css/screen.css",
+      "length": 56646,
+      "offset": 0,
+      "servePath": "/packages/telescope-theme-hubble/lib/client/css/screen.css"
+    },
+    {
+      "type": "prelink",
+      "file": "web.browser/packages/telescope-theme-hubble.js",
+      "length": 810,
+      "offset": 0,
+      "servePath": "/packages/telescope-theme-hubble.js",
+      "sourceMap": "web.browser/packages/telescope-theme-hubble.js.map"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [
+    {
+      "name": "compareVersions",
+      "export": true
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "telescope-lib"
+    },
+    {
+      "package": "telescope-base"
+    },
+    {
+      "package": "http"
+    },
+    {
+      "package": "jquery"
+    },
+    {
+      "package": "underscore"
+    },
+    {
+      "package": "iron:router"
+    },
+    {
+      "package": "templating"
+    }
+  ],
+  "resources": [
+    {
+      "type": "css",
+      "file": "web.cordova/packages/telescope-update-prompt/lib/client/templates/update_banner.css",
+      "length": 332,
+      "offset": 0,
+      "servePath": "/packages/telescope-update-prompt/lib/client/templates/update_banner.css"
+    },
+    {
+      "type": "prelink",
+      "file": "web.cordova/packages/telescope-update-prompt.js",
+      "length": 6814,
+      "offset": 0,
+      "servePath": "/packages/telescope-update-prompt.js",
+      "sourceMap": "web.cordova/packages/telescope-update-prompt.js.map"
+    }
+  ]
+}

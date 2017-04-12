@@ -1,0 +1,42 @@
+{
+  "builtBy": "meteor/13",
+  "buildDependencies": {
+    "os.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-rss/package.js": "26d5ecbbd237a578b11362f01b6d041f2645032b",
+        "/home/action/workspace/RetortB/packages/telescope-rss/.npm/package/npm-shrinkwrap.json": "46b4c513e997cea098ad6dbcea1c031af348216d",
+        "/home/action/workspace/RetortB/packages/telescope-rss/lib/server/rss.js": "fd63cd1f4fb1d3555c579e8d7a8abbfa6fbea95e",
+        "/home/action/workspace/RetortB/packages/telescope-rss/lib/server/routes.js": "a56eb19b489cdcc15bd7bb945facdb42b9c6acb8"
+      },
+      "directories": []
+    },
+    "web.browser.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-rss/package.js": "26d5ecbbd237a578b11362f01b6d041f2645032b",
+        "/home/action/workspace/RetortB/packages/telescope-rss/.npm/package/npm-shrinkwrap.json": "46b4c513e997cea098ad6dbcea1c031af348216d"
+      },
+      "directories": []
+    },
+    "web.cordova.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-rss/package.js": "26d5ecbbd237a578b11362f01b6d041f2645032b",
+        "/home/action/workspace/RetortB/packages/telescope-rss/.npm/package/npm-shrinkwrap.json": "46b4c513e997cea098ad6dbcea1c031af348216d"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/home/action/workspace/RetortB/packages/telescope-rss/package.js": "26d5ecbbd237a578b11362f01b6d041f2645032b"
+    },
+    "directories": []
+  },
+  "source": "/home/action/workspace/RetortB/packages/telescope-rss",
+  "buildTimeDirectDependencies": {
+    "telescope-lib": "0.2.9+8f99c935e1877c58f39af5d2287bc2915e76d32e",
+    "meteor": "1.1.1",
+    "telescope-base": "0.0.0+bddba8c5dc6a7bf80f8ca908f72bd24551a372ed"
+  },
+  "buildTimePluginDependencies": {},
+  "cordovaDependencies": null
+}

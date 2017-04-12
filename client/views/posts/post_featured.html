@@ -1,0 +1,109 @@
+ <template name="post_featured">
+     <section class="active-campaign featured-campaigns feature-block cf" id="featcampaign" style="margin-top:10px; background-color:#2980b9">
+
+		<div class="shadow-wrapper">
+
+							<!--<a href="http://164a-themes.com/franklin/featured-campaigns/" class="more-link alignright">
+					More Featured Campaigns				</a>-->
+						
+			
+			<h6 class="block-title with-icon" data-icon="" style="margin-bottom:15px; margin-top:20px">Featured Project</h6>
+
+			
+				
+								<div class="featured-campaign">					
+
+											<a href="{{postLink}}" title="Go to {{title}}" source="">
+							<div class="campaign-image" style="height:35%; width:35%">
+								<img style="border-width:0px" width="706" height="470" src="{{photoLink}}" class="attachment-post-thumbnail wp-post-image" alt="{{title}}">							</div>
+						</a>
+					
+					<div class="campaign-summary cf">		
+
+						<div class="title-wrapper">
+							<h3><a style="font-weight:normal; color:white" href="{{postLink}}" title="Go to {{title}}" target="">
+                 {{title}}
+                   {{#if isNonProfit}}  
+                     <i class="fa fa-heart-o fa-2x" style="font-size:initial" title="NonProfit verified"></i> 
+                   {{/if}}
+                </a></h3>
+						</div>
+
+						<p>{{tagLine}}</p>
+
+            
+              <style>
+/* hide number input controls on desktop */
+input[type='number'] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+input::outer-spin-button, input::inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}  
+
+            </style>
+            
+            
+            
+            
+
+            
+            
+							<div class="campaign-support center" style="padding-bottom:15px; font-family:Oswald; text-align:center">
+                
+      <div style="margin: 0 50px; display: inline-block; float:left;">
+    <div class="col-xs-2">
+        <div class="input-group">
+            <span class="input-group-addon">$</span>
+            <input type="number" required="" placeholder="0.00" class="form-control" id="amount" style="width:120px; font-size: 14px; padding-bottom: 5px; padding-top: 5px; margin-bottom: 3px">
+        </div>
+    </div>
+        </div>
+                
+                <a style="color:white; border-color:white; margin: 0 10px; display: inline-block; float:left; background-color:#e74c3c" class="button button-alt" id="pledgebutton" data-reveal-id="campaign-form-27" href="#">Pledge</a>
+   
+            </div>
+												
+						<ul class="campaign-status horizontal center" style="padding-bottom:0px">
+							<li class="campaign-funded">
+								<span>{{fundingTotalAmount}}</span>
+								Funded		
+							</li>
+							<li class="campaign-raised">
+								<span>{{fundingTotalFormatted}}</span>
+								Pledged		
+							</li>
+							<li class="campaign-goal if-tiny-hide">
+								<span>{{fundingGoalFormatted}}</span>
+								Goal				
+							</li>
+							<li class="campaign-backers">
+								<span>{{backers}}</span>
+								Backers							</li>		
+							<li class="campaign-time-left">
+								<span>{{daysLeft}}</span>days left								
+							</li>		
+						</ul>
+
+					</div>	
+
+					<ul class="share horizontal">
+            <br/>
+	<li style="padding-top:10px"><h6>{{>  postShare}}</h6></li>
+  </ul>	
+
+				</div>				
+
+				
+			
+		</div>	
+
+	</section>
+</template>

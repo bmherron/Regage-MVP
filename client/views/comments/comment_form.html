@@ -1,0 +1,16 @@
+<template name="comment_form">
+  {{#if canComment}}
+    <div class="comment-new module" style="width:60%; background-color:transparent; box-shadow:none">
+      <form style="background-color:transparent">
+        <div class="comment-field" id="editor" style="background-color:transparent;">
+          <textarea id="comment" rows="3" autofocus="autofocus" placeholder="Post a comment"></textarea>
+        </div>
+      <div class="comment-submit" style="float: left; padding-bottom: 20px">
+          <input type="submit" class="button" value="Comment" title="(⌘+enter)" />
+        </div>       
+ 
+      </form>
+    </div>
+   
+  {{/if}}  
+</template>

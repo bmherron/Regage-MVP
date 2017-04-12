@@ -1,0 +1,28 @@
+<template name="nav">
+  <header class="header desktop-only">
+
+
+
+    {{#if hasPrimaryNav}}
+      <ul class="nav primary-nav desktop-nav {{dropdownClass}} header-module desktop-only">
+        {{#each primaryNav}}
+          <li>
+            {{> UI.dynamic template=getTemplate}}
+          </li>
+        {{/each}}
+      </ul>
+    {{/if}}
+
+    {{#if hasSecondaryNav}}
+      <ul class="nav secondary-nav desktop-nav {{dropdownClass}} header-module desktop-only">
+        {{#each secondaryNav}}
+          <li>
+            {{> UI.dynamic template=getTemplate}}
+          </li>
+        {{/each}}
+      </ul>
+    {{/if}}
+
+  </header>
+
+</template>

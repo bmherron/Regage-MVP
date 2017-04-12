@@ -1,0 +1,55 @@
+{
+  "builtBy": "meteor/13",
+  "buildDependencies": {
+    "os.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-daily/package.js": "e70df328a7a3c934c660d77a90ec334fcce8058d",
+        "/home/action/workspace/RetortB/packages/telescope-daily/lib/daily.js": "3c43ebf29b4fcdd6c1be2faf78359c0b0c621b6b",
+        "/home/action/workspace/RetortB/packages/telescope-daily/lib/server/publications.js": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+      },
+      "directories": []
+    },
+    "web.browser.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-daily/package.js": "e70df328a7a3c934c660d77a90ec334fcce8058d",
+        "/home/action/workspace/RetortB/packages/telescope-daily/lib/daily.js": "3c43ebf29b4fcdd6c1be2faf78359c0b0c621b6b",
+        "/home/action/workspace/RetortB/packages/telescope-daily/lib/client/routes.js": "da037a4aa9a356fc8e46043c4e7dcbc913146e9c",
+        "/home/action/workspace/RetortB/packages/telescope-daily/lib/client/templates/posts_daily.html": "74f54b5fa3e01b4f327b066ac62980e4ebf68c93",
+        "/home/action/workspace/RetortB/packages/telescope-daily/lib/client/templates/posts_daily.js": "6afa1e7596be3ade9a74e54c5cdfdbebf00f17fd",
+        "/home/action/workspace/RetortB/packages/telescope-daily/lib/client/stylesheets/daily.css": "e8ae64e5c1288244fe4ec958b4f5730972e4c555"
+      },
+      "directories": []
+    },
+    "web.cordova.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-daily/package.js": "e70df328a7a3c934c660d77a90ec334fcce8058d",
+        "/home/action/workspace/RetortB/packages/telescope-daily/lib/daily.js": "3c43ebf29b4fcdd6c1be2faf78359c0b0c621b6b",
+        "/home/action/workspace/RetortB/packages/telescope-daily/lib/client/routes.js": "da037a4aa9a356fc8e46043c4e7dcbc913146e9c",
+        "/home/action/workspace/RetortB/packages/telescope-daily/lib/client/templates/posts_daily.html": "74f54b5fa3e01b4f327b066ac62980e4ebf68c93",
+        "/home/action/workspace/RetortB/packages/telescope-daily/lib/client/templates/posts_daily.js": "6afa1e7596be3ade9a74e54c5cdfdbebf00f17fd",
+        "/home/action/workspace/RetortB/packages/telescope-daily/lib/client/stylesheets/daily.css": "e8ae64e5c1288244fe4ec958b4f5730972e4c555"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/home/action/workspace/RetortB/packages/telescope-daily/package.js": "e70df328a7a3c934c660d77a90ec334fcce8058d"
+    },
+    "directories": []
+  },
+  "source": "/home/action/workspace/RetortB/packages/telescope-daily",
+  "buildTimeDirectDependencies": {
+    "meteorhacks:subs-manager": "1.1.0",
+    "telescope-lib": "0.2.9+8f99c935e1877c58f39af5d2287bc2915e76d32e",
+    "templating": "1.0.7",
+    "underscore": "1.0.0",
+    "iron:router": "0.9.4",
+    "jquery": "1.0.0",
+    "meteor": "1.1.1",
+    "meteorhacks:fast-render": "1.1.2",
+    "telescope-base": "0.0.0+6732af6605cbdf354f13a7f7bcd21d92fc492da7"
+  },
+  "buildTimePluginDependencies": {},
+  "cordovaDependencies": null
+}

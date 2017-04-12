@@ -1,0 +1,252 @@
+<template name="register_modal">
+
+	<!-- Intro Section Form -->		
+						<div id="intro_form" class="col-sm-5 col-md-5">
+						{{#if zipReturned}}
+     
+              
+              
+							<!--Register form -->
+					<!--		<div class="form_register"> -->
+								<!--<h2> Join the Buzz! </h2>-->
+								
+							
+									
+                  
+ <div class="register span6">
+   
+                    	<form action="#" name="contactform" class="row center" id="registerform"  method="post" style="margin-bottom:0px">
+                                                
+                        <label for="firstname">First Name</label>
+                        <input type="text" pattern=".{2,15}"  id="firstname" name="firstname" placeholder="enter your first name..." required>
+                        
+                        <label for="lastname">Last Name</label>
+                        <input type="text" pattern=".{2,20}"  id="lastname" name="lastname" placeholder="enter your last name..." required>
+                        
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="{{email}}" style="background-color:#ddd" readonly>
+                        
+                        <label for="email">Location</label>
+                        <input type="text" id="email" name="zipcode" placeholder="{{primaryCity}}, {{state}} {{zipcode}} " style="background-color:#ddd" readonly>
+                        
+                        <label for="password">Password</label>
+                        <input type="password" pattern=".{4,15}" id="password" name="password" placeholder="choose a password..." required>
+                        
+                        <button type="submit" id="submit" >REGISTER</button>
+                        
+                    </form>
+								
+</div>	
+              
+              
+              {{/if}}
+              {{#if zipWaiting}}
+               <span style="text-align:center"> Please wait while we place you into your community.
+               </span>
+              
+              		<!-- Cancel Button -->
+									<div class="register span6">
+										<input class="btn btn-primary btn-lg" type="submit" value="Cancel Register" id="submit">
+									</div>  
+              {{/if}}
+              
+              
+              {{#if zipAccountError}}
+                {{errorText}}
+              <br/>
+              		<!-- Cancel Button -->
+									<div class="register span6">
+										<input class="btn btn-primary btn-lg" type="submit" value="Click here to Return" id="submit">
+									</div>  
+              {{/if}}
+              
+              
+              {{#if zipError}}
+                We're sorry but we cannot find your location.  Feel free to try again with a different zip code or email us at regage.co
+              		<!-- Cancel Button -->
+									<div class="register span6">
+										<input class="btn btn-primary btn-lg" type="submit" value="Click here to Return" id="submit">
+									</div>  
+              {{/if}}
+              
+              
+	</div>	<!-- End Intro Section Form -->
+
+  
+  
+  
+  <style>
+  
+/* ----- Registration Form ----- */
+  
+
+.register form {
+    padding: 20px 50px 40px 50px;
+    background: #f8f8f8 url(../img/pattern.jpg) left top repeat;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.3);
+    text-align: center;
+}
+
+.register form h2 {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    background: url(../img/pencil.png) 70px 6px no-repeat;
+    border-bottom: 2px dotted #bbb;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.register form input {
+    width: 95%;
+    height: 30px;
+    background: #fcfcfc;
+    border: 1px solid #ddd;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1) inset;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1) inset;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1) inset;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    color: #888;
+    font-size: 16px;
+}
+
+.register form input:focus {
+    border: 1px solid #ccc;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.register form label {
+    margin: 7px 0 10px 5px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.register form label span {
+    font-style: italic;
+}
+
+.register form input:-moz-placeholder { color: #aaa; }
+.register form input:-ms-input-placeholder { color: #aaa; }
+.register form input::-webkit-input-placeholder { color: #aaa; }
+
+.register form button {
+    cursor: pointer;
+    width: 60%;
+    height: 42px;
+    margin-top: 25px;
+    padding: 0;
+    background: #eb4141;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 0;
+    -moz-box-shadow: 0 15px 30px 0 rgba(255,255,255,.1) inset;
+    -webkit-box-shadow: 0 15px 30px 0 rgba(255,255,255,.1) inset;
+    box-shadow: 0 15px 30px 0 rgba(255,255,255,.1) inset;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,.1);
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+
+.register form button:hover {
+    -moz-box-shadow: 0 -15px 30px 0 rgba(255,255,255,.05) inset;
+    -webkit-box-shadow: 0 -15px 30px 0 rgba(255,255,255,.05) inset;
+    box-shadow: 0 -15px 30px 0 rgba(255,255,255,.05) inset;
+}
+
+.register form button:active {
+    -moz-box-shadow:
+        0 -15px 30px 0 rgba(255,255,255,.05) inset,       
+        0 5px 8px 0 rgba(0,0,0,.1) inset;
+    -webkit-box-shadow:
+        0 -15px 30px 0 rgba(255,255,255,.05) inset,       
+        0 5px 8px 0 rgba(0,0,0,.1) inset;
+    box-shadow:
+        0 -15px 30px 0 rgba(255,255,255,.05) inset,       
+        0 5px 8px 0 rgba(0,0,0,.1) inset;
+}
+
+.register form {
+background: white;  
+}
+
+    
+
+/* ----- Media queries ----- */
+
+@media (max-width: 1200px) {
+
+    .register form h2 { background: url(../img/pencil.png) 20px 6px no-repeat; }
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+    .register form h2 { background: none; }
+
+}
+
+@media (max-width: 767px) {
+
+    body { padding-left: 0; padding-right: 0; }
+
+    .logo, .links { text-align: center; }
+
+    .links { padding-bottom: 5px; }
+
+    .logo h1 { padding-left: 0; }
+
+    .links a.home { margin-left: 0; }
+
+    .links a.blog { margin-right: 0; }
+
+    .register-container { padding-left: 20px; padding-right: 20px; }
+
+    .register form h2 { background: none; }
+
+    .iphone img { display: none; }
+
+}
+
+@media (max-width: 480px) {
+.register form button { width: 97%; }
+
+}
+    
+@media (max-width: 480px) {
+ .register form { 
+     padding-left:2% !important;
+     padding-right:2% !important}
+
+}
+
+  
+ /* ----- Validation ----- */ 
+  input:required:valid {
+    background-image: url(/img/valid.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+  
+  
+  
+  
+
+  </style>
+</template>

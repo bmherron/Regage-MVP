@@ -1,0 +1,82 @@
+<template name="post_fund_collect">
+
+
+  
+ <div class="banner" style="background-color:#E64B3B">
+	<div class="shadow-wrapper">
+		<h1 class="banner-title">Collection</h1>
+	</div>
+</div>
+
+  <div class="grid submit">
+    <form class="grid-block form-horizontal">
+      <h3>{{title}}</h3>
+      
+      
+        				
+			<div class="barometer" id="barometer1" data-progress="{{fundingTotalPercent}}" data-width="148" data-height="148" data-strokewidth="11" data-stroke="#fff" data-progress-stroke="#7d6e63" style="height:30rem;">
+				<span><span>{{fundingTotalPercent}}<sup>%</sup></span> Funded</span>
+			</div>	
+            
+ 
+        
+        
+				<li class="campaign-goal">
+					<span>{{fundingGoalFormatted}}</span>
+					Goal				
+				</li>
+		
+        <li class="campaign-start">
+					<span>{{fundingStartDate}}</span>
+					Start Date			</li>		
+        <li class="campaign-duration">
+					<span>{{fundingDuration}}</span>
+					Days Duration				</li>	
+ 
+				<li class="campaign-backers">
+					<span>{{backers}}</span>
+					Backers				</li>	
+				<li class="campaign-raised">
+					<span>{{fundingTotalFormatted}}</span>
+					Pledged		
+				</li>
+				<li class="campaign-raised">
+					<span>{{payCollectedAmt}}</span>
+					Collected 	
+          <span> ({{payFeeAmt}}</span>
+					Processing fees)
+				</li>
+				<li class="campaign-raised">
+					<span>{{payRejectedAmt}}</span>
+					Rejected 		
+				</li>
+				<li class="campaign-raised">
+					<span>{{payUntriedAmt}}</span>
+					Not Yet Attempted 		
+				</li>			
+   
+          {{campaignStatus}}
+    <br/>
+          {{messageText}}
+      
+  
+      <div class="form-actions">
+        
+        <input id="cancel" type="submit" class="button" value="{{i18n 'Return'}}" style="margin-right: 10px;" />
+      {{#if includeCollectButton}}
+        <input id="collect" type="submit" class="button" value="Collect Pledges" style="margin-right: 10px;" />
+      {{/if}}
+      {{#if includeAuthButton}}
+       <input id="auth" type="submit" class="button" value="Authorize access to Stripe" style="margin-right: 10px;" />
+      {{/if}}
+     </div>
+    </form>
+  </div>
+  
+  
+
+  
+    
+
+
+</template>

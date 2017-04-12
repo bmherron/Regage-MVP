@@ -1,0 +1,65 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [
+    {
+      "name": "adminNav",
+      "export": true
+    },
+    {
+      "name": "viewParameters",
+      "export": true
+    },
+    {
+      "name": "Searches"
+    },
+    {
+      "name": "PostsSearchController"
+    },
+    {
+      "name": "currentDate"
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "telescope-lib"
+    },
+    {
+      "package": "telescope-base"
+    },
+    {
+      "package": "aldeed:simple-schema"
+    },
+    {
+      "package": "jquery"
+    },
+    {
+      "package": "underscore"
+    },
+    {
+      "package": "iron:router"
+    },
+    {
+      "package": "templating"
+    }
+  ],
+  "resources": [
+    {
+      "type": "css",
+      "file": "web.cordova/packages/telescope-search/lib/client/css/search.css",
+      "length": 74,
+      "offset": 0,
+      "servePath": "/packages/telescope-search/lib/client/css/search.css"
+    },
+    {
+      "type": "prelink",
+      "file": "web.cordova/packages/telescope-search.js",
+      "length": 36579,
+      "offset": 0,
+      "servePath": "/packages/telescope-search.js",
+      "sourceMap": "web.cordova/packages/telescope-search.js.map"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "telescope-lib"
+    },
+    {
+      "package": "telescope-base"
+    }
+  ],
+  "resources": [
+    {
+      "type": "prelink",
+      "file": "os/packages/telescope-theme-hubble.js",
+      "length": 810,
+      "offset": 0,
+      "servePath": "/packages/telescope-theme-hubble.js",
+      "sourceMap": "os/packages/telescope-theme-hubble.js.map"
+    }
+  ]
+}

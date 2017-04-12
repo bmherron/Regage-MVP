@@ -1,0 +1,74 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [
+    {
+      "name": "preloadSubscriptions",
+      "export": true
+    },
+    {
+      "name": "adminNav",
+      "export": true
+    },
+    {
+      "name": "Categories",
+      "export": true
+    },
+    {
+      "name": "addToPostSchema",
+      "export": true
+    },
+    {
+      "name": "primaryNav",
+      "export": true
+    },
+    {
+      "name": "postModules",
+      "export": true
+    },
+    {
+      "name": "categorySchema"
+    },
+    {
+      "name": "getCategoryUrl"
+    },
+    {
+      "name": "PostsCategoryController"
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "telescope-lib"
+    },
+    {
+      "package": "telescope-base"
+    },
+    {
+      "package": "aldeed:simple-schema"
+    },
+    {
+      "package": "jquery"
+    },
+    {
+      "package": "underscore"
+    },
+    {
+      "package": "iron:router"
+    },
+    {
+      "package": "templating"
+    }
+  ],
+  "resources": [
+    {
+      "type": "prelink",
+      "file": "web.cordova/packages/telescope-tags.js",
+      "length": 45429,
+      "offset": 0,
+      "servePath": "/packages/telescope-tags.js",
+      "sourceMap": "web.cordova/packages/telescope-tags.js.map"
+    }
+  ]
+}

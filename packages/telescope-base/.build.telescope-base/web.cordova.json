@@ -1,0 +1,165 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [
+    {
+      "name": "adminNav",
+      "export": true
+    },
+    {
+      "name": "viewNav",
+      "export": true
+    },
+    {
+      "name": "addToPostSchema",
+      "export": true
+    },
+    {
+      "name": "addToCommentsSchema",
+      "export": true
+    },
+    {
+      "name": "addToSettingsSchema",
+      "export": true
+    },
+    {
+      "name": "preloadSubscriptions",
+      "export": true
+    },
+    {
+      "name": "primaryNav",
+      "export": true
+    },
+    {
+      "name": "secondaryNav",
+      "export": true
+    },
+    {
+      "name": "viewParameters",
+      "export": true
+    },
+    {
+      "name": "footerModules",
+      "export": true
+    },
+    {
+      "name": "heroModules",
+      "export": true
+    },
+    {
+      "name": "postModules",
+      "export": true
+    },
+    {
+      "name": "postHeading",
+      "export": true
+    },
+    {
+      "name": "postMeta",
+      "export": true
+    },
+    {
+      "name": "modulePositions",
+      "export": true
+    },
+    {
+      "name": "postSubmitRenderedCallbacks",
+      "export": true
+    },
+    {
+      "name": "postSubmitClientCallbacks",
+      "export": true
+    },
+    {
+      "name": "postSubmitMethodCallbacks",
+      "export": true
+    },
+    {
+      "name": "postAfterSubmitMethodCallbacks",
+      "export": true
+    },
+    {
+      "name": "postEditRenderedCallbacks",
+      "export": true
+    },
+    {
+      "name": "postEditClientCallbacks",
+      "export": true
+    },
+    {
+      "name": "postEditMethodCallbacks",
+      "export": true
+    },
+    {
+      "name": "postAfterEditMethodCallbacks",
+      "export": true
+    },
+    {
+      "name": "commentSubmitRenderedCallbacks",
+      "export": true
+    },
+    {
+      "name": "commentSubmitClientCallbacks",
+      "export": true
+    },
+    {
+      "name": "commentSubmitMethodCallbacks",
+      "export": true
+    },
+    {
+      "name": "commentAfterSubmitMethodCallbacks",
+      "export": true
+    },
+    {
+      "name": "commentEditRenderedCallbacks",
+      "export": true
+    },
+    {
+      "name": "commentEditClientCallbacks",
+      "export": true
+    },
+    {
+      "name": "commentEditMethodCallbacks",
+      "export": true
+    },
+    {
+      "name": "commentAfterEditMethodCallbacks",
+      "export": true
+    },
+    {
+      "name": "getTemplate",
+      "export": true
+    },
+    {
+      "name": "templates",
+      "export": true
+    },
+    {
+      "name": "themeSettings",
+      "export": true
+    },
+    {
+      "name": "postAfterMethodCallbacks"
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "telescope-i18n"
+    },
+    {
+      "package": "telescope-lib"
+    }
+  ],
+  "resources": [
+    {
+      "type": "prelink",
+      "file": "web.cordova/packages/telescope-base.js",
+      "length": 21486,
+      "offset": 0,
+      "servePath": "/packages/telescope-base.js",
+      "sourceMap": "web.cordova/packages/telescope-base.js.map"
+    }
+  ]
+}

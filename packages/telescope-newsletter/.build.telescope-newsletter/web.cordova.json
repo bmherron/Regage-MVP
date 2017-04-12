@@ -1,0 +1,60 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [
+    {
+      "name": "campaignSchema"
+    },
+    {
+      "name": "Campaigns"
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "telescope-lib"
+    },
+    {
+      "package": "telescope-base"
+    },
+    {
+      "package": "aldeed:simple-schema"
+    },
+    {
+      "package": "mrt:mailchimp"
+    },
+    {
+      "package": "jquery"
+    },
+    {
+      "package": "underscore"
+    },
+    {
+      "package": "iron:router"
+    },
+    {
+      "package": "templating"
+    },
+    {
+      "package": "mrt:cookies"
+    }
+  ],
+  "resources": [
+    {
+      "type": "css",
+      "file": "web.cordova/packages/telescope-newsletter/lib/client/templates/newsletter_banner.css",
+      "length": 2159,
+      "offset": 0,
+      "servePath": "/packages/telescope-newsletter/lib/client/templates/newsletter_banner.css"
+    },
+    {
+      "type": "prelink",
+      "file": "web.cordova/packages/telescope-newsletter.js",
+      "length": 33583,
+      "offset": 0,
+      "servePath": "/packages/telescope-newsletter.js",
+      "sourceMap": "web.cordova/packages/telescope-newsletter.js.map"
+    }
+  ]
+}

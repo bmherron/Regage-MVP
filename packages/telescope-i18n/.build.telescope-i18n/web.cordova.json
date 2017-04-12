@@ -1,0 +1,27 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [
+    {
+      "name": "i18n",
+      "export": true
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "ui"
+    }
+  ],
+  "resources": [
+    {
+      "type": "prelink",
+      "file": "web.cordova/packages/telescope-i18n.js",
+      "length": 2027,
+      "offset": 0,
+      "servePath": "/packages/telescope-i18n.js",
+      "sourceMap": "web.cordova/packages/telescope-i18n.js.map"
+    }
+  ]
+}

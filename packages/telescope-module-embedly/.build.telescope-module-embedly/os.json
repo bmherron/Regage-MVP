@@ -1,0 +1,33 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [
+    {
+      "name": "getEmbedlyData"
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "telescope-lib"
+    },
+    {
+      "package": "telescope-base"
+    },
+    {
+      "package": "http",
+      "constraint": "1.0.2"
+    }
+  ],
+  "resources": [
+    {
+      "type": "prelink",
+      "file": "os/packages/telescope-module-embedly.js",
+      "length": 12315,
+      "offset": 0,
+      "servePath": "/packages/telescope-module-embedly.js",
+      "sourceMap": "os/packages/telescope-module-embedly.js.map"
+    }
+  ]
+}

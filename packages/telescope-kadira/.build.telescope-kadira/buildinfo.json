@@ -1,0 +1,42 @@
+{
+  "builtBy": "meteor/13",
+  "buildDependencies": {
+    "os.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-kadira/package.js": "def9ac6ce607a71880ea86cbcd07d10b213a4e18",
+        "/home/action/workspace/RetortB/packages/telescope-kadira/lib/kadira-settings.js": "7c6e778a7906673fc6d3c68724cf69e420e8aaf1",
+        "/home/action/workspace/RetortB/packages/telescope-kadira/lib/server/kadira.js": "a48acc61a24991ba0a3c91e6755af1285e211289"
+      },
+      "directories": []
+    },
+    "web.browser.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-kadira/package.js": "def9ac6ce607a71880ea86cbcd07d10b213a4e18",
+        "/home/action/workspace/RetortB/packages/telescope-kadira/lib/kadira-settings.js": "7c6e778a7906673fc6d3c68724cf69e420e8aaf1"
+      },
+      "directories": []
+    },
+    "web.cordova.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-kadira/package.js": "def9ac6ce607a71880ea86cbcd07d10b213a4e18",
+        "/home/action/workspace/RetortB/packages/telescope-kadira/lib/kadira-settings.js": "7c6e778a7906673fc6d3c68724cf69e420e8aaf1"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/home/action/workspace/RetortB/packages/telescope-kadira/package.js": "def9ac6ce607a71880ea86cbcd07d10b213a4e18"
+    },
+    "directories": []
+  },
+  "source": "/home/action/workspace/RetortB/packages/telescope-kadira",
+  "buildTimeDirectDependencies": {
+    "telescope-lib": "0.2.9+8f99c935e1877c58f39af5d2287bc2915e76d32e",
+    "meteorhacks:kadira": "2.11.2",
+    "meteor": "1.1.1",
+    "telescope-base": "0.0.0+bddba8c5dc6a7bf80f8ca908f72bd24551a372ed"
+  },
+  "buildTimePluginDependencies": {},
+  "cordovaDependencies": null
+}

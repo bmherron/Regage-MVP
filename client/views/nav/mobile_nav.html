@@ -1,0 +1,95 @@
+<template name="mobile_nav">
+<style>
+    .nav-action {font-family: Oswald, 'Helvetica Neue', Helvetica, sans-serif; 
+      font-size: 15px; letter-spacing: 1px; line-height: 30px; 
+      text-transform: uppercase;color:#7d6e63 !important; margin-right: 7px;}
+    .nav-action:hover {color: #a73b2d !important; text-decoration: none !important;   }
+</style>	   
+
+  <div class="mobile-nav" style="z-index: 200">
+    
+
+    <div class="mobile-nav-inner">
+
+				
+
+            
+      <ul class="mobile-menu"  style="padding-left:10px;">
+          <li  style="margin-top:15px;">
+            <a class="nav-action" style="margin-top:10px" href="javascript:Session.set('feed','2');Router.go('/top')"> Home</a>
+          </li>
+          <li style="background-color: grey;margin-top:10px;"></li>
+          <li >
+            <a  class="nav-action" style="margin-top:10px"  href="/howitworks">How it Works</a>
+          </li>  
+          <li style="background-color: grey;margin-top:10px;"></li>
+          <li >
+           <a  class="nav-action" style="margin-top:10px"  href="/aboutus">About Us</a>
+          </li>
+          <li style="background-color: grey;margin-top:10px;"></li>
+          <li >
+            {{#if isLoggedIn}}
+                <div class="user-menu dropdown header-submodule">
+                  <a class="nav-action view dropdown-top-level" href="/" style="margin-right: 0px;padding-left:0px;">
+
+                    {{name}}
+                  </a>
+                  <div class="dropdown-menu">
+                    <ul role="menu" aria-labelledby="dLabel">
+                      <li><a href="{{profileUrl}}">{{i18n "Profile"}}</a></li>
+                      <li><a href="/account">{{i18n "Edit Account"}}</a></li> 
+                      <li><a href="/sign-out">{{i18n "Sign Out"}}</a></li>
+                    </ul>
+                  </div>
+                </div>
+            {{/if}}
+          </li>
+          <li style="background-color: grey;margin-top:7px;"></li>
+          <li >
+            {{#if isLoggedIn}}
+              <div class="dropdown notifications-menu header-submodule">
+                <a class="nav-action view  dropdown-top-level" href="/" style="margin-right: 0px;padding-left:0px;">{{notification_count}}</a>
+                <div class="dropdown-menu">
+                  <ul role="menu" aria-labelledby="dLabel">
+                    {{#if hasNotifications}}
+                      <li><a href="#" class="button mark-as-read">{{i18n "Mark as read"}}</a></li>  
+                      {{#each notifications}}
+                        {{> UI.dynamic template=notificationItem}}
+                      {{/each}}
+                    {{else}}
+                      <li>No notifications</li>
+                    {{/if}}
+                  </ul>
+                </div>
+              </div>
+            {{/if}}
+
+          </li>
+          <li style="background-color: grey;margin-top:7px;"></li>
+             {{#if isIssue}}
+              <a class="user-campaign button with-icon button-alt button-small" style="margin-top:10px" href="/submit/{{sessionFeed}}" data-icon="">Start a {{i18n "Issue"}}</a>
+             {{else}}      
+              <a class="user-campaign button with-icon button-alt button-small" style="margin-top:10px" href="/submit/{{sessionFeed}}" data-icon="">Create a {{i18n "Project"}}</a>
+              {{/if}}
+        
+        
+            <li style="background-color: grey;margin-top:10px;"></li>
+              {{#if isLoggedIn}}
+               <a href="/sign-out" class="user-login button with-icon button-alt button-small" style="margin-top:10px" data-reveal-id="login-form" title="{{getUserInfo}}">Sign Out</a>    
+              {{else}}       
+                <a href="/sign-in" class="user-login button with-icon button-alt button-small" style="margin-top:10px" data-reveal-id="login-form">Login / Register</a>   
+              {{/if}}        
+        
+          <li style="background-color: grey;margin-top:10px;"></li>
+          <li >
+                 <span class="nav-action" style="margin-top:0px" >{{>  siteShare}} </span>
+          </li>  
+        
+      </ul>  
+            
+
+
+
+    </div>
+  </div>
+</template>

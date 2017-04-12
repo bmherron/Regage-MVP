@@ -1,0 +1,53 @@
+.vote_feed {
+text-align: center;
+
+}
+
+input_feed {
+margin: 5px 0 5px 0;
+padding: 3px;
+border: 1px solid #999;
+font-size: 100%;
+font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+
+.vote_feed-up-off {
+text-indent: -9999em;
+font-size: 1px;
+cursor: pointer;
+background-position: 0 -265px;
+display: block;
+margin: 0 auto;
+width: 41px;
+height: 25px;
+background-image: url('img/sprites.png?v=3c6263c3453b');
+background-repeat: no-repeat;
+overflow: hidden;
+}
+
+.question-page_feed .vote-count-post_feed {
+padding-top: 2px;
+color: #555;
+}
+
+.vote_feed span {
+display: block;
+color: #808185;
+font-weight: normal;
+}
+
+.vote_feed-count-post {
+font-size: 24px;
+}
+
+.vote_feed-down-off {
+background-position: 0 -300px;
+}
+
+.vote_feed-down-off {
+text-indent: -9999em;
+font-size: 1px;
+}
+
+

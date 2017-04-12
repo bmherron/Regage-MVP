@@ -1,0 +1,77 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+# Meteor Packages
+meteor-platform
+standard-app-packages
+backbone
+spiderable
+email
+
+# Atmosphere Packages
+
+iron:router
+
+meteorhacks:fast-render@1.0.0
+meteorhacks:subs-manager@1.1.0
+
+aldeed:autoform
+aldeed:collection2
+aldeed:simple-schema
+
+mrt:jquery-hotkeys@0.0.1
+mrt:cookies@0.3.0
+mrt:moment
+mrt:mailchimp
+
+cmather:handlebars-server@0.2.0
+sacha:spin@2.0.4
+sacha:juice
+chuangbo:marked@0.3.3
+percolatestudio:synced-cron@0.1.1
+npm-container
+matb33:collection-hooks
+djedi:sanitize-html
+rajit:bootstrap3-datepicker
+bengott:avatar
+jparker:gravatar
+
+# Telescope Packages
+
+telescope-base
+telescope-api
+telescope-theme-base
+telescope-theme-hubble
+telescope-i18n
+
+# Accounts Templates
+service-configuration
+cfs:standard-packages
+cfs:filesystem
+mrt:zipcodes
+meteorhacks:npm
+mizzao:bootboxjs
+mrgalaxy:stripe
+mrt:accounts-stripe
+linto:fontawesome
+copleykj:stripe-sync
+http
+bootstrap
+mizzao:timesync
+richsilv:owl-carousel
+smowden:kissmetrics
+
+telescope-daily
+telescope-lib
+accounts-base
+accounts-password
+accounts-ui
+telescope-email
+telescope-notifications
+telescope-module-share
+accounts-facebook
+accounts-twitter
+useraccounts:unstyled

@@ -1,0 +1,33 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [
+    {
+      "name": "serveAPI",
+      "export": true
+    },
+    {
+      "name": "twitterName"
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "telescope-base"
+    },
+    {
+      "package": "telescope-lib"
+    }
+  ],
+  "resources": [
+    {
+      "type": "prelink",
+      "file": "os/packages/telescope-api.js",
+      "length": 10365,
+      "offset": 0,
+      "servePath": "/packages/telescope-api.js",
+      "sourceMap": "os/packages/telescope-api.js.map"
+    }
+  ]
+}

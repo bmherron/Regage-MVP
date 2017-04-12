@@ -1,0 +1,319 @@
+.profile_left_content {
+width: 72%;
+margin-top: 20px;
+float:left;
+position: relative;
+padding-left: 0.9375rem;
+padding-right: 0.9375rem;
+}
+
+.profile_author_cont {
+margin-bottom: 25px;
+}
+
+.profile_author_cont .profile_author_photo {
+position: relative;
+display: inline-block;
+zoom: 1;
+vertical-align: top;
+width: 31%;
+border: 1px solid #E0E0E0;
+border-radius: 3px;
+text-align: center;
+margin: 0 5% 30px 0;
+}
+
+body .profile_author_cont .profile_author_photo img {
+display: inline-block;
+width: 100%;
+float: left;
+}
+
+.profile_author_cont .profile_author_photo img {
+max-width: 265px;
+height: auto;    
+}
+
+.profile_author_cont .profile_right_box {
+display: inline-block;
+zoom: 1;
+vertical-align: top;
+width: 63%;
+margin: 0 0 30px -4px;
+}
+
+.profile_user_dsb_cf {
+margin: 20px 0;
+}
+
+.profile_user_dsb_cf label {
+display: inline-block;
+vertical-align: top;
+width: 28%;
+margin-bottom: 5px;
+padding-top:0px;
+color: #8f8f8f;
+padding-right: 2%;
+margin-right: -4px;
+}
+
+.profile_user_dsb_cf span {
+display: inline-block;
+vertical-align: top;
+width: 70%;
+color: #000;
+}
+
+.profile_user_dsb_cf span a {
+color: #000;
+}
+
+.profile_user_dsb_cf p {
+padding-bottom: 5px;
+}
+
+
+.profile_author_info {
+float: none;
+overflow: hidden;
+vertical-align: top;
+width: auto;
+word-wrap: break-word;
+}
+
+
+.profile_clearfix {
+clear: both;
+padding-bottom: 12px;
+margin-bottom: 12px;
+position: relative;
+}
+
+
+.profile_clearfix img {
+float:left;
+}
+
+
+.profile_clearfix:before {
+content: ".........................................................................................................................................................................................................................................";
+position: absolute;
+bottom: -7px;
+letter-spacing: 3px;
+left: 0;
+font-family: arial, sans-serif;
+font-size: 9px;
+color: #aaa;
+}
+
+.author_social_networks.social_media .social_media_list {
+text-align: left;
+margin: 0 0 4px;
+}
+
+
+.widget {
+margin-bottom: 50px;
+clear: both;
+float: left;
+margin: 0 0 40px;
+width: 100%;
+word-wrap: break-word;
+}
+
+
+.widget h3 .sidebar .widget-title {
+border-bottom: none;
+border-top: none;
+margin-bottom: 17px;
+padding-bottom: 17px;
+font-weight: normal;
+width: 100%;
+padding-left: 0;
+position: relative;
+display: block;
+overflow: hidden;
+}
+
+.widget h3 .sidebar{
+font-size: 1.250em;
+color: #1a1b1c;
+line-height: normal;
+padding: 8px 0;
+
+}
+
+.widget ul{
+background: 0 0;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+
+p.profile_title {
+padding-bottom:0px;  
+}
+
+p.profile_post_count {
+padding-bottom:5px;
+}
+
+
+.sidebar.large-3 {
+margin-left: 1.2%;
+}
+
+.large-3 {
+width: 26.8%;
+}
+
+.columns {
+position: relative;
+padding-left: 0.9375rem;
+padding-right: 0.9375rem;
+float: left;
+}
+
+
+#profile_content {
+float:left;
+width: 65%;
+margin-top: 20px;
+}
+
+     .profile_tabs { 
+	 margin: 20px 0 10px; 
+	 border-bottom: 2px solid rgba(0,0,0,0.13); 
+	 clear: both; 
+	 list-style: none;
+	 }
+	 
+	 .profile_tabs .normal { 
+	 float: left; 
+	 padding: 10px 15px 5px;
+	 }
+	 
+	 .profile_tabs:before, .profile_tabs:after { 
+	 content: " "; 
+	 display: table; 
+	 }
+	 
+	 .profile_tabs:after { 
+	 clear: both; 
+	 }
+	 
+	 .profile_tabs dd,  .profile_tabs .tab-title { 
+	 position: relative; 
+	 margin-bottom: 0; 
+	 list-style: none; 
+	 float: left; 
+	 margin-right: 5px; 
+	 }
+	 
+	 .profile_tabs dd > a,  .profile_tabs .tab-title > a { 
+	 display: block; 
+	 background: rgba(0,0,0,0.06); 
+	 color: #444; 
+	 line-height: 1; 
+	 padding: 12px 12px 11px; 
+	 font-size: 14px; 
+	 border-radius: 3px 3px 0 0; 
+	 border-width: 2px 2px 0; 
+	 border-style: solid solid none; 
+	 border-color: rgba(0,0,0,0.13) rgba(0,0,0,0.13) transparent; 
+	 }
+	 
+	 .profile_tabs dd > a:hover,  .profile_tabs .tab-title > a:hover { 
+	 background: rgba(0,0,0,0.12); 
+	 }
+	 
+	 .profile_tabs dd.active a,  .profile_tabs .tab-title.active a { 
+	 background: white; 
+	 color: #222222; 
+	 position: relative; 
+	 top: 2px; 
+	 margin-top: -2px; 
+	 padding-bottom: 13px;
+	 }
+	 
+	 .profile_tabs.radius dd:first-child a,  .profile_tabs.radius .tab:first-child a { 
+	 border-bottom-left-radius: 3px; 
+	 border-top-left-radius: 3px; 
+	 }
+	 
+	 .profile_tabs.radius dd:last-child a,  .profile_tabs.radius .tab:last-child a { 
+	 border-bottom-right-radius: 3px; 
+	 border-top-right-radius: 3px; 
+	 }
+	 
+	 .profile_tabs.vertical dd,  .profile_tabs.vertical .tab-title { 
+	 position: inherit; 
+	 float: none;
+	 display: block; 
+	 top: auto; 
+	 }
+	 
+	 .profile_tabs-content { 
+	 margin-bottom: 1.5rem; 
+	 width: 100%; 
+	 }
+	 
+	.tevolution_custom_field { 
+	margin-bottom: 1.5rem; 
+	}
+	
+	 .profile_tabs-content:before,  .profile_tabs-content:after { 
+	 content: " "; 
+	 display: table; 
+	 }
+	 
+	 .profile_tabs-content:after { 
+	 clear: both; 
+	 }
+	 
+	 .profile_tabs-content > .content { 
+	 display: none; 
+	 float: left; 
+	 padding:0 0 0.9375rem; 
+	 width: 100%; 
+	 }
+	 
+	 .profile_tabs-content > .content.active { 
+	 display: block; 
+	 float: none; 
+	 }
+	 
+	 .profile_tabs-content > .content.contained {
+	 padding: 0.9375rem; 
+	 }
+	 
+	 .profile_tabs-content.vertical { 
+	 display: block; 
+	 }
+	 
+	 .profile_tabs-content.vertical > .content { 
+	 padding: 0 0.9375rem;
+	 }
+
+	@media screen and (max-width: 480px) {
+	 .profile_tabs dd.active a,  .profile_tabs .tab-title.active a { 
+	 background: white;
+	 color: #222222;
+	 top: 0; 
+	 margin-top: 0;
+	 padding:12px 12px 11px;
+	 }
+	 
+	 .profile_tabs dd > a,  .profile_tabs .tab-title > a { 
+	 border-color: rgba(0, 0, 0, 0.13); 
+	 border-radius: 3px;
+	 border-style: solid;
+	 border-width: 2px; 
+	 margin-bottom: 6px; 
+	 }
+	 
+	 .profile_tabs { 
+	 border-bottom: 0; 
+	 }
+  }

@@ -1,0 +1,34 @@
+<template name="posts_list_search">
+  {{#if canSearch}}
+  <style>
+.searchpl {
+  position: relative; margin-top:10px;}
+
+  .searchpl .search-fieldpl {
+    font-size: 14px;
+    padding: 4px 12px;
+    line-height: 1.3;
+    border-radius: 20px;
+    border: 0px;
+    width: 218px;
+    -webkit-transition: 0.2s all;
+    -moz-transition: 0.2s all;
+    background: #f1f1f1; }
+
+    .searchpl .search-fieldpl:focus {
+      outline: none; }
+
+  .searchpl.empty .search-fieldpl {
+    background: #d1d9e2; }
+
+    .searchpl.empty .search-fieldpl:focus {
+      background: #f1f1f1; }
+
+  .searchpl.empty .search-clear {
+    display: none; }
+  </style>
+    <div class="searchpl {{searchQueryEmpty}} " style="border:none; text-align:left;display:inline-block;margin-top:0px;">
+      <input id="search" style="width:95%;;text-align:left;" type="search" class="search-fieldpl" placeholder="search" value="{{searchQuery}}">
+    </div>
+  {{/if}}
+</template>

@@ -1,0 +1,53 @@
+{
+  "builtBy": "meteor/13",
+  "buildDependencies": {
+    "os.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-module-embedly/package.js": "82838162bc284242333227a2b018d409ae5ba8fe",
+        "/home/action/workspace/RetortB/packages/telescope-module-embedly/lib/embedly.js": "a2b4b9558260744508332be0aa245a29ad2ed8ec",
+        "/home/action/workspace/RetortB/packages/telescope-module-embedly/lib/server/get_embedly_data.js": "3051bf0854038b688a5abcefbbdcc37f1fabb593"
+      },
+      "directories": []
+    },
+    "web.browser.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-module-embedly/package.js": "82838162bc284242333227a2b018d409ae5ba8fe",
+        "/home/action/workspace/RetortB/packages/telescope-module-embedly/lib/embedly.js": "a2b4b9558260744508332be0aa245a29ad2ed8ec",
+        "/home/action/workspace/RetortB/packages/telescope-module-embedly/lib/client/post_thumbnail.html": "d1920f6ba3e3eaa94c2033e26f03e12dd57bbe9c",
+        "/home/action/workspace/RetortB/packages/telescope-module-embedly/lib/client/post_thumbnail.js": "9992086364ad24c4d6ef5175b9a5423904e26ac2",
+        "/home/action/workspace/RetortB/packages/telescope-module-embedly/lib/client/post_thumbnail.css": "034dba455838e39690cdcdbc4ccd58ca214595ba",
+        "/home/action/workspace/RetortB/packages/telescope-module-embedly/lib/client/post_video.html": "6bca1f574bfbc6c1ebabe8d8037388b6dbfcbff5",
+        "/home/action/workspace/RetortB/packages/telescope-module-embedly/lib/client/post_video.js": "018c9f5ff19fc5f2dcecb60f1f1b48c9583ec7ee"
+      },
+      "directories": []
+    },
+    "web.cordova.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-module-embedly/package.js": "82838162bc284242333227a2b018d409ae5ba8fe",
+        "/home/action/workspace/RetortB/packages/telescope-module-embedly/lib/embedly.js": "a2b4b9558260744508332be0aa245a29ad2ed8ec",
+        "/home/action/workspace/RetortB/packages/telescope-module-embedly/lib/client/post_thumbnail.html": "d1920f6ba3e3eaa94c2033e26f03e12dd57bbe9c",
+        "/home/action/workspace/RetortB/packages/telescope-module-embedly/lib/client/post_thumbnail.js": "9992086364ad24c4d6ef5175b9a5423904e26ac2",
+        "/home/action/workspace/RetortB/packages/telescope-module-embedly/lib/client/post_thumbnail.css": "034dba455838e39690cdcdbc4ccd58ca214595ba",
+        "/home/action/workspace/RetortB/packages/telescope-module-embedly/lib/client/post_video.html": "6bca1f574bfbc6c1ebabe8d8037388b6dbfcbff5",
+        "/home/action/workspace/RetortB/packages/telescope-module-embedly/lib/client/post_video.js": "018c9f5ff19fc5f2dcecb60f1f1b48c9583ec7ee"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/home/action/workspace/RetortB/packages/telescope-module-embedly/package.js": "82838162bc284242333227a2b018d409ae5ba8fe"
+    },
+    "directories": []
+  },
+  "source": "/home/action/workspace/RetortB/packages/telescope-module-embedly",
+  "buildTimeDirectDependencies": {
+    "telescope-lib": "0.2.9+8f99c935e1877c58f39af5d2287bc2915e76d32e",
+    "templating": "1.0.7",
+    "http": "1.0.6",
+    "meteor": "1.1.1",
+    "telescope-base": "0.0.0+43aa8dc8a43e72fb336e4c2546926b45e760059d"
+  },
+  "buildTimePluginDependencies": {},
+  "cordovaDependencies": null
+}

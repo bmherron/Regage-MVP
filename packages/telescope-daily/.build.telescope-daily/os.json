@@ -1,0 +1,36 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [
+    {
+      "name": "PostsDailyController",
+      "export": true
+    }
+  ],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "telescope-lib"
+    },
+    {
+      "package": "telescope-base"
+    },
+    {
+      "package": "meteorhacks:fast-render"
+    },
+    {
+      "package": "meteorhacks:subs-manager"
+    }
+  ],
+  "resources": [
+    {
+      "type": "prelink",
+      "file": "os/packages/telescope-daily.js",
+      "length": 2493,
+      "offset": 0,
+      "servePath": "/packages/telescope-daily.js",
+      "sourceMap": "os/packages/telescope-daily.js.map"
+    }
+  ]
+}

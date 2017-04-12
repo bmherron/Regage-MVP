@@ -1,0 +1,36 @@
+{
+  "format": "unipackage-unibuild-pre1",
+  "packageVariables": [],
+  "uses": [
+    {
+      "package": "meteor"
+    },
+    {
+      "package": "telescope-lib"
+    },
+    {
+      "package": "telescope-base"
+    },
+    {
+      "package": "templating",
+      "constraint": "1.0.4"
+    }
+  ],
+  "resources": [
+    {
+      "type": "css",
+      "file": "web.cordova/packages/telescope-module-embedly/lib/client/post_thumbnail.css",
+      "length": 1458,
+      "offset": 0,
+      "servePath": "/packages/telescope-module-embedly/lib/client/post_thumbnail.css"
+    },
+    {
+      "type": "prelink",
+      "file": "web.cordova/packages/telescope-module-embedly.js",
+      "length": 15637,
+      "offset": 0,
+      "servePath": "/packages/telescope-module-embedly.js",
+      "sourceMap": "web.cordova/packages/telescope-module-embedly.js.map"
+    }
+  ]
+}

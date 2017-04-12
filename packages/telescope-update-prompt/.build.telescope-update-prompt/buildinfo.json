@@ -1,0 +1,51 @@
+{
+  "builtBy": "meteor/13",
+  "buildDependencies": {
+    "os.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-update-prompt/package.js": "85d074ce3634ed2a8df81c91bd49cf351d428928",
+        "/home/action/workspace/RetortB/packages/telescope-update-prompt/lib/server/phone_home.js": "e7d4d6d283f21daf0ef86e823007911feb14649c"
+      },
+      "directories": []
+    },
+    "web.browser.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-update-prompt/package.js": "85d074ce3634ed2a8df81c91bd49cf351d428928",
+        "/home/action/workspace/RetortB/packages/telescope-update-prompt/lib/client/update.js": "fad8b7e6b5c18f226aba478edd3e570e289df2a3",
+        "/home/action/workspace/RetortB/packages/telescope-update-prompt/lib/client/templates/update_banner.html": "daa44428cf7d6e06397e7a86a461a2898dda4207",
+        "/home/action/workspace/RetortB/packages/telescope-update-prompt/lib/client/templates/update_banner.js": "6249cc7510762541be8402f70ac32964d1cdcc86",
+        "/home/action/workspace/RetortB/packages/telescope-update-prompt/lib/client/templates/update_banner.css": "0f2107db7206ae8421a13faf72d74d1267c40acc"
+      },
+      "directories": []
+    },
+    "web.cordova.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-update-prompt/package.js": "85d074ce3634ed2a8df81c91bd49cf351d428928",
+        "/home/action/workspace/RetortB/packages/telescope-update-prompt/lib/client/update.js": "fad8b7e6b5c18f226aba478edd3e570e289df2a3",
+        "/home/action/workspace/RetortB/packages/telescope-update-prompt/lib/client/templates/update_banner.html": "daa44428cf7d6e06397e7a86a461a2898dda4207",
+        "/home/action/workspace/RetortB/packages/telescope-update-prompt/lib/client/templates/update_banner.js": "6249cc7510762541be8402f70ac32964d1cdcc86",
+        "/home/action/workspace/RetortB/packages/telescope-update-prompt/lib/client/templates/update_banner.css": "0f2107db7206ae8421a13faf72d74d1267c40acc"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/home/action/workspace/RetortB/packages/telescope-update-prompt/package.js": "85d074ce3634ed2a8df81c91bd49cf351d428928"
+    },
+    "directories": []
+  },
+  "source": "/home/action/workspace/RetortB/packages/telescope-update-prompt",
+  "buildTimeDirectDependencies": {
+    "telescope-lib": "0.2.9+8f99c935e1877c58f39af5d2287bc2915e76d32e",
+    "templating": "1.0.7",
+    "underscore": "1.0.0",
+    "iron:router": "0.9.4",
+    "http": "1.0.6",
+    "jquery": "1.0.0",
+    "meteor": "1.1.1",
+    "telescope-base": "0.0.0+73a10bad45786834669cc116d18ff54584f3cd1c"
+  },
+  "buildTimePluginDependencies": {},
+  "cordovaDependencies": null
+}

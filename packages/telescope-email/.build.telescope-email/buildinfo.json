@@ -1,0 +1,48 @@
+{
+  "builtBy": "meteor/13",
+  "buildDependencies": {
+    "os.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-email/package.js": "0c3d71fb4fd11e9b64ba89f050caeebe38c6351c",
+        "/home/action/workspace/RetortB/packages/telescope-email/.npm/package/npm-shrinkwrap.json": "9a57713beb8deb136b93a039dac1cb0a3134be94",
+        "/home/action/workspace/RetortB/packages/telescope-email/lib/server/email.js": "b981dcceb5feba9326d88c5cff9ace8b65c8562c",
+        "/home/action/workspace/RetortB/packages/telescope-email/lib/server/templates/emailAccountApproved.handlebars": "5c8d2fbaa3c8b10c73830f7db3508bd5a8511cf8",
+        "/home/action/workspace/RetortB/packages/telescope-email/lib/server/templates/emailInvite.handlebars": "18d17b784319376a32443c15d70818eb0c05bb6f",
+        "/home/action/workspace/RetortB/packages/telescope-email/lib/server/templates/emailNewComment.handlebars": "a1980bb8f91f2046e2bfc90cda5dda634ff82e8d",
+        "/home/action/workspace/RetortB/packages/telescope-email/lib/server/templates/emailNewPost.handlebars": "294b0c796a1f22d16a7d22445084e9fdf9e68ef3",
+        "/home/action/workspace/RetortB/packages/telescope-email/lib/server/templates/emailNewReply.handlebars": "3dda93fea4bdcf71a50632752ab5a1c0f3aca368",
+        "/home/action/workspace/RetortB/packages/telescope-email/lib/server/templates/emailNewUser.handlebars": "44899f335a640000c1d7ab55db9bf9e02555d09b",
+        "/home/action/workspace/RetortB/packages/telescope-email/lib/server/templates/emailTest.handlebars": "f0c2ea7838072d20c3e8319673b24a928aed2425",
+        "/home/action/workspace/RetortB/packages/telescope-email/lib/server/templates/emailWrapper.handlebars": "9fba2c42cb243f25a4c77d17eddbfd484d1cf4ea"
+      },
+      "directories": []
+    },
+    "web.browser.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-email/package.js": "0c3d71fb4fd11e9b64ba89f050caeebe38c6351c",
+        "/home/action/workspace/RetortB/packages/telescope-email/.npm/package/npm-shrinkwrap.json": "9a57713beb8deb136b93a039dac1cb0a3134be94"
+      },
+      "directories": []
+    },
+    "web.cordova.json": {
+      "files": {
+        "/home/action/workspace/RetortB/packages/telescope-email/package.js": "0c3d71fb4fd11e9b64ba89f050caeebe38c6351c",
+        "/home/action/workspace/RetortB/packages/telescope-email/.npm/package/npm-shrinkwrap.json": "9a57713beb8deb136b93a039dac1cb0a3134be94"
+      },
+      "directories": []
+    }
+  },
+  "pluginDependencies": {
+    "files": {
+      "/home/action/workspace/RetortB/packages/telescope-email/package.js": "0c3d71fb4fd11e9b64ba89f050caeebe38c6351c"
+    },
+    "directories": []
+  },
+  "source": "/home/action/workspace/RetortB/packages/telescope-email",
+  "buildTimeDirectDependencies": {
+    "cmather:handlebars-server": "0.2.0",
+    "meteor": "1.1.1"
+  },
+  "buildTimePluginDependencies": {},
+  "cordovaDependencies": null
+}

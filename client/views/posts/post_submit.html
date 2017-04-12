@@ -1,0 +1,114 @@
+<template name="post_submit">
+ 
+  
+  <div id="main" class="cf" role="main"> 	
+	
+					
+				
+				<div class="banner" style="background-color:#E64B3B">
+	<div class="shadow-wrapper">
+		<h1 class="banner-title">New Project</h1>
+	</div>
+</div>
+				<div class="content content-wrapper fullwidth" style="margin-top:40px; float:none">							
+						
+					<article id="post-464" class="post-464 page type-page status-publish hentry block entry-block">						
+					
+						<div class="entry cf">
+															
+	<form action="" method="post" class="atcf-submit-campaign" enctype="multipart/form-data">
+
+			<h3 class="atcf-submit-section campaign_heading">Project Information</h3>
+	<p class="atcf-submit-campaign-title">
+		<label for="title">Title</label>
+		<input type="text" name="title" id="title" value="" placeholder="">
+	</p>
+    
+    <input id="postType" type="hidden" value="2"/>
+    
+    
+	<p class="atcf-submit-campaign-goal">
+		<label for="goal">Goal ($)</label>
+		<input type="text" name="goal" id="fundingGoal" value="" placeholder="">
+	</p>
+	<p class="atcf-submit-campaign-length">
+		<label for="length">Length (Days)</label>
+		<input class="datepicker" type="number" min="14" max="42" step="1" name="length" id="fundingDuration" value="" placeholder="">
+		<span class="description"></span>
+	</p>
+<input type="hidden" name="type" value="donation">	<div class="atcf-submit-campaign-category">
+
+    	<p class="atcf-submit-campaign-image">
+		<label for="image">Featured Image</label>
+		<input type="file" name="image" id="fileinput">
+
+			</p>
+	</div>
+
+	<div class="atcf-submit-campaign-description">
+		<label for="description">Tell Us Your Story</label>
+  <textarea name="excerpt" id="story" style="height:251"></textarea>
+
+	</div>
+	<p class="atcf-submit-campaign-excerpt">
+		<label for="excerpt">Where Does The Money Go? </label>
+		<textarea name="excerpt" id="what" style="height:251"></textarea>
+	</p>
+    
+    	<p class="atcf-submit-campaign-excerpt">
+		<label for="excerpt">Who is Behind it? </label>
+		<textarea name="excerpt" id="bodyWho" style="height:251"></textarea>
+	</p>
+
+    
+       <div  style="float:left;width:100%;" class="control-group">
+          <label class="control-label">{{i18n "NonProfit?"}}</label>
+          <div style="margin-left:0px; width:100%; float:left" class="controls">
+            <input type="checkbox" name="nonProfit" id="nonProfit" />
+          </div>
+        </div>
+     
+        <div style="width:100%;float:left" class="control-group">
+       	  <label class="control-label" for="message">{{i18n "NonProfit Documentation"}}</label>
+          <br/>
+          <div style="margin-left:0px; width:100%; float:left" class="controls">
+	   
+            <input style="float:left; width:60%; max-width:600px" id="npfileinput" type="file"/>
+          
+           </div>
+         </div> 
+      <div class="form-actions" style="background-color:white; border-top:0px">
+        <input type="submit" class="button" value="{{i18n 'Submit'}}" />
+      </div>
+    
+	</form>
+
+	
+
+						</div>						
+
+					</article>
+
+				</div>
+
+			
+			
+
+			</div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+		 
+  
+</template>
